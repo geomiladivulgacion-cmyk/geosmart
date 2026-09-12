@@ -98,14 +98,26 @@ img { max-width:100%; display:block; }
 .prose { max-width:780px; }
 .prose h2 { color:var(--green); font:600 2.2rem 'Playfair Display',serif; margin-top:48px; }
 .prose p,.prose li { color:#59615e; }
+.prose li { margin:12px 0; padding-left:4px; }
 .profile { display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; align-items:start; }
 .profile-photo { aspect-ratio:4/5; background:var(--green); display:grid; place-items:center; color:white; font:600 2rem 'Playfair Display',serif; text-align:center; padding:30px; }
+.profile-photo span { opacity:.78; }
+.timeline-mini { border-left:2px solid var(--orange); padding-left:24px; margin:24px 0 10px; }
+.timeline-mini p { margin:0 0 22px; }
+.timeline-mini p:last-child { margin-bottom:0; }
+.timeline-mini span { color:#69706d; font-size:.9rem; }
+.about-links { display:flex; align-items:center; gap:28px; flex-wrap:wrap; margin-top:30px; }
+.about-links .btn,.about-links .text-link { margin-top:0; }
 .contact-box { background:var(--green); color:white; padding:60px; }
 .contact-box h2 { color:white; }
+.contact-box a { color:white; border-bottom:1px solid rgba(255,255,255,.35); }
+.contact-box a:hover { color:var(--orange); border-color:var(--orange); }
 footer { background:var(--green); color:rgba(255,255,255,.8); padding:44px 0; }
 .footer-inner { display:flex; justify-content:space-between; gap:30px; align-items:center; }
 .footer-brand { color:white; font:600 1.5rem 'Playfair Display',serif; }
 .footer-links { display:flex; gap:22px; font-size:.8rem; }
+.footer-links a:hover { color:var(--orange); }
+.footer-socials { border-left:1px solid rgba(255,255,255,.18); padding-left:30px; }
 
 @media (max-width:800px) {
   .nav-links { display:none; }
@@ -120,4 +132,5 @@ footer { background:var(--green); color:rgba(255,255,255,.8); padding:44px 0; }
   .section { padding:65px 0; }
   .section-head { display:block; }
   .footer-inner { flex-direction:column; align-items:flex-start; }
+  .footer-socials { border-left:0; border-top:1px solid rgba(255,255,255,.18); padding-left:0; padding-top:20px; width:100%; flex-wrap:wrap; }
 }
