@@ -1,19 +1,54 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="About — GeoSmart">
-  <section class="page-hero"><div class="container"><div class="section-kicker">The geologist behind GeoSmart</div><h1>About</h1></div></section>
-  <section class="page"><div class="container profile">
-    <div class="profile-photo">Your photo<br>goes here.</div>
-    <div class="prose">
-      <p class="section-kicker">Hi, I'm Camila.</p>
-      <h2>Geology, the subsurface and the stories hidden in rocks.</h2>
-      <p>I am a geology undergraduate interested in subsurface geology, geophysics, sedimentology and energy resources. GeoSmart is my personal space for documenting the work I am most proud of and sharing what I learn along the way.</p>
-      <h2>What I am exploring</h2>
-      <ul><li>Subsurface and offshore geology</li><li>Geophysics and seismic interpretation</li><li>Sedimentology and geological reservoirs</li><li>GIS and spatial analysis</li><li>Scientific communication and outreach</li></ul>
-      <h2>Academic path</h2>
-      <p><strong>Universidad Complutense de Madrid</strong> — Geology</p>
-      <p><strong>NTNU, Trondheim</strong> — Erasmus exchange, 2026–27</p>
+<BaseLayout title="About — GeoSmart" description="About Camila Fernández — geology undergraduate, geoscience communicator and aspiring subsurface geologist.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-kicker">The geologist behind GeoSmart</div>
+      <h1>Curious about<br />what lies beneath.</h1>
+      <p class="muted">A geology student building a path towards subsurface and offshore geoscience.</p>
     </div>
-  </div></section>
+  </section>
+
+  <section class="page">
+    <div class="container profile">
+      <div class="profile-photo">
+        <span>Your field photo<br />goes here.</span>
+      </div>
+
+      <div class="prose">
+        <p class="section-kicker">Hi, I'm Camila.</p>
+        <h2>I like geology because it is part science, part detective work.</h2>
+        <p>I'm a geology undergraduate at the Universidad Complutense de Madrid, currently spending the 2026–27 academic year at NTNU in Trondheim. I'm particularly interested in the subsurface: how geological history, physical properties and geophysical data come together to help us understand what we cannot see directly.</p>
+        <p>My interests sit at the intersection of <strong>subsurface geology, geophysics, sedimentology and energy resources</strong>, with a growing focus on seismic interpretation and geological reservoirs.</p>
+
+        <h2>Where I want to go</h2>
+        <p>I'm working towards a career in <strong>offshore and North Sea geoscience</strong>, especially exploration and subsurface work. I want to keep developing the technical skills needed to interpret geological and geophysical data while understanding the bigger geological story behind them.</p>
+        <p>For me, good geoscience is not only about getting an interpretation right. It's also about being able to explain <em>why</em> it makes sense.</p>
+
+        <h2>What I'm building</h2>
+        <ul>
+          <li><strong>Subsurface &amp; offshore geology</strong> — geological reasoning below the surface and in energy-related settings.</li>
+          <li><strong>Geophysics</strong> — seismic interpretation and using geophysical evidence to understand structures.</li>
+          <li><strong>Sedimentology</strong> — depositional environments, sedimentary records and reservoir thinking.</li>
+          <li><strong>GIS &amp; geological mapping</strong> — turning spatial data into useful geological information.</li>
+          <li><strong>Scientific communication</strong> — making geological ideas understandable without making them less rigorous.</li>
+        </ul>
+
+        <h2>Academic path</h2>
+        <div class="timeline-mini">
+          <p><strong>Universidad Complutense de Madrid</strong><br /><span>Geology · 2021–present</span></p>
+          <p><strong>NTNU, Trondheim</strong><br /><span>Erasmus exchange · 2026–27</span></p>
+        </div>
+
+        <h2>Beyond the degree</h2>
+        <p>I'm also interested in the space between science and people. Through science outreach and <strong>@_geomila_</strong>, I enjoy sharing geology in a way that feels curious, visual and approachable. GeoSmart brings those two sides together: the technical work I'm learning to do and the stories that make geology worth looking at in the first place.</p>
+
+        <div class="about-links">
+          <a class="btn" href="/geosmart/cv/">See my CV →</a>
+          <a class="text-link dark" href="mailto:c.fernandez@geosmart.es">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
