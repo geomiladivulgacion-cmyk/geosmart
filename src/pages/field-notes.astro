@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Field Notes — GeoSmart" description="Field notes, geological explanations and learning notes from Camila Fernández on geology, Norway, subsurface and scientific curiosity.">
   <section class="page-hero notes-hero">
+    <div class="notes-scribble" aria-hidden="true"><span></span><span></span><span></span></div>
     <div class="container">
       <div class="section-kicker">Geology · Norway · Learning</div>
       <h1>Field Notes</h1>
@@ -23,10 +24,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </article>
 
       <div class="note-list note-grid">
-        <article class="note note-card"><div class="note-index">02</div><div class="note-meta"><span class="card-tag">Norway</span><span>Field · Trondheim</span></div><h3>Geology in Trondheim</h3><p>What changes when you start looking at an everyday landscape with a geologist's eye — and what I am noticing around Trondheim.</p><div class="note-footer"><span>Landscape</span><span>In preparation</span></div></article>
-        <article class="note note-card"><div class="note-index">03</div><div class="note-meta"><span class="card-tag">Sedimentology</span><span>Learning</span></div><h3>Reading a sedimentary log</h3><p>How observations become a sedimentary interpretation, and why the geological story is rarely as simple as one neat answer.</p><div class="note-footer"><span>Earth history</span><span>In preparation</span></div></article>
-        <article class="note note-card"><div class="note-index">04</div><div class="note-meta"><span class="card-tag">Energy</span><span>Subsurface</span></div><h3>What makes a good reservoir?</h3><p>Porosity, permeability and the geological history behind reservoir quality — without drowning in jargon.</p><div class="note-footer"><span>Reservoirs</span><span>In preparation</span></div></article>
-        <article class="note note-card"><div class="note-index">05</div><div class="note-meta"><span class="card-tag">Learning</span><span>Student life</span></div><h3>Things I wish I knew before studying geology</h3><p>Fieldwork, maps, software, mistakes and the gradual process of learning how to think like a geologist.</p><div class="note-footer"><span>Student geology</span><span>In preparation</span></div></article>
+        <article class="note note-card note-green"><div class="note-index">02</div><div class="note-meta"><span class="card-tag">Norway</span><span>Field · Trondheim</span></div><h3>Geology in Trondheim</h3><p>What changes when you start looking at an everyday landscape with a geologist's eye — and what I am noticing around Trondheim.</p><div class="note-footer"><span>Landscape</span><span>In preparation</span></div></article>
+        <article class="note note-card note-orange"><div class="note-index">03</div><div class="note-meta"><span class="card-tag">Sedimentology</span><span>Learning</span></div><h3>Reading a sedimentary log</h3><p>How observations become a sedimentary interpretation, and why the geological story is rarely as simple as one neat answer.</p><div class="note-footer"><span>Earth history</span><span>In preparation</span></div></article>
+        <article class="note note-card note-ochre"><div class="note-index">04</div><div class="note-meta"><span class="card-tag">Energy</span><span>Subsurface</span></div><h3>What makes a good reservoir?</h3><p>Porosity, permeability and the geological history behind reservoir quality — without drowning in jargon.</p><div class="note-footer"><span>Reservoirs</span><span>In preparation</span></div></article>
+        <article class="note note-card note-cream"><div class="note-index">05</div><div class="note-meta"><span class="card-tag">Learning</span><span>Student life</span></div><h3>Things I wish I knew before studying geology</h3><p>Fieldwork, maps, software, mistakes and the gradual process of learning how to think like a geologist.</p><div class="note-footer"><span>Student geology</span><span>In preparation</span></div></article>
       </div>
     </div>
   </section>
@@ -35,20 +36,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-  .notes-hero { position:relative; overflow:hidden; }
-  .notes-hero::after { content:'FIELD / NOTE / 01'; position:absolute; right:5%; bottom:24%; writing-mode:vertical-rl; color:rgba(15,61,62,.22); font-size:.62rem; font-weight:700; letter-spacing:.2em; }
-  .notes-compass { position:absolute; right:9%; top:34%; width:86px; height:86px; border:1px solid rgba(15,61,62,.16); border-radius:50%; display:grid; place-items:center; color:var(--green); font-size:.6rem; letter-spacing:.15em; }
-  .notes-compass::before,.notes-compass::after { content:''; position:absolute; background:var(--orange); }
-  .notes-compass::before{width:1px;height:112px}.notes-compass::after{height:1px;width:112px}
-  .notes-compass b{font-size:1rem;font-weight:500;z-index:1}.notes-compass span{position:absolute}.notes-compass span:first-child{top:6px}.notes-compass span:last-child{bottom:6px}
-  .note-article-card { position:relative; overflow:hidden; }
-  .note-article-card::after { content:'01'; position:absolute; right:18px; bottom:-25px; color:rgba(15,61,62,.06); font:700 8rem/1 'Playfair Display',serif; }
-  .note-number { color:var(--orange); font-size:.62rem; font-weight:700; letter-spacing:.18em; margin-bottom:18px; }
-  .note-card { position:relative; padding-left:12px; transition:transform .25s ease; }
-  .note-card:hover { transform:translateX(5px); }
-  .note-index { color:rgba(15,61,62,.18); font:600 2.3rem/1 'Playfair Display',serif; margin-bottom:9px; }
-  .notes-bottom { padding:70px 0 85px; background:var(--cream); border-top:1px solid var(--line); }
-  .notes-bottom p { max-width:720px; color:var(--green); font:500 clamp(1.7rem,3.4vw,2.8rem)/1.2 'Playfair Display',serif; margin:14px 0 28px; }
-  .geology-line { display:block; width:100%; height:20px; background:linear-gradient(175deg,transparent 42%,var(--orange) 43% 46%,transparent 47% 60%,rgba(15,61,62,.28) 61% 63%,transparent 64%); opacity:.7; }
-  @media (max-width:800px){.notes-compass{right:6%;top:58%;width:64px;height:64px}.notes-compass::before{height:84px}.notes-compass::after{width:84px}.notes-hero::after{display:none}}
+  .notes-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#edf2eb 0%,#fffdf9 52%,#f6efe7 100%)}
+  .notes-hero::after{content:'FIELD / NOTE / 01';position:absolute;right:5%;bottom:24%;writing-mode:vertical-rl;color:rgba(15,61,62,.22);font-size:.62rem;font-weight:700;letter-spacing:.2em}
+  .notes-scribble{position:absolute;right:7%;bottom:12%;width:300px;height:120px;opacity:.25;transform:rotate(-8deg)}.notes-scribble span{position:absolute;inset:0;border-top:1px solid var(--green);border-radius:50%;transform:skewX(-18deg)}.notes-scribble span:nth-child(2){inset:20px 25px}.notes-scribble span:nth-child(3){inset:40px 55px;border-color:var(--orange)}
+  .notes-compass{position:absolute;right:14%;top:24%;width:86px;height:86px;border:1px solid rgba(15,61,62,.18);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:.6rem;letter-spacing:.15em;background:rgba(255,253,249,.35)}.notes-compass::before,.notes-compass::after{content:'';position:absolute;background:var(--orange)}.notes-compass::before{width:1px;height:112px}.notes-compass::after{height:1px;width:112px}.notes-compass b{font-size:1rem;font-weight:500;z-index:1}.notes-compass span{position:absolute}.notes-compass span:first-child{top:6px}.notes-compass span:last-child{bottom:6px}
+  .note-article-card{position:relative;overflow:hidden;border-left:5px solid var(--orange);background:linear-gradient(145deg,#fffdf9,#f4eadf)}.note-article-card::after{content:'01';position:absolute;right:18px;bottom:-25px;color:rgba(15,61,62,.06);font:700 8rem/1 'Playfair Display',serif}.note-number{color:var(--orange);font-size:.62rem;font-weight:700;letter-spacing:.18em;margin-bottom:18px}
+  .note-card{position:relative;padding-left:18px;border-left:4px solid var(--green);transition:transform .25s ease,box-shadow .25s ease;background:#fffdf9}.note-card:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(15,61,62,.1)}.note-green{border-left-color:var(--green)}.note-orange{border-left-color:var(--orange)}.note-ochre{border-left-color:#b69b55}.note-cream{border-left-color:#c97b55}.note-index{color:rgba(15,61,62,.18);font:600 2.3rem/1 'Playfair Display',serif;margin-bottom:9px}
+  .note-orange .note-index{color:rgba(245,130,32,.45)}.note-ochre .note-index{color:rgba(182,155,85,.55)}
+  .notes-bottom{padding:70px 0 85px;background:var(--green);border-top:1px solid var(--line);position:relative;overflow:hidden}.notes-bottom::after{content:'✦';position:absolute;right:10%;top:28px;color:rgba(245,130,32,.5);font-size:2rem}.notes-bottom p{max-width:720px;color:#fff7ee;font:500 clamp(1.7rem,3.4vw,2.8rem)/1.2 'Playfair Display',serif;margin:14px 0 28px}.geology-line{display:block;width:100%;height:20px;background:linear-gradient(175deg,transparent 42%,var(--orange) 43% 46%,transparent 47% 60%,rgba(255,255,255,.35) 61% 63%,transparent 64%);opacity:.8}
+  @media (max-width:800px){.notes-compass{right:6%;top:58%;width:64px;height:64px}.notes-compass::before{height:84px}.notes-compass::after{width:84px}.notes-hero::after{display:none}.notes-scribble{right:-80px;bottom:5%;opacity:.14}}
 </style>
