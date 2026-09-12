@@ -3,53 +3,83 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 const projects = `${base}projects/`;
 const fieldNotes = `${base}field-notes/`;
+const about = `${base}about/`;
+const cv = `${base}cv/`;
 ---
 <BaseLayout title="GeoSmart — Camila Fernández" description="Camila Fernández — geology undergraduate exploring the subsurface.">
   <section class="hero">
-    <div class="container hero-content">
-      <div class="eyebrow">Welcome to GeoSmart</div>
-      <h1>Camila Fernández <span>Geology undergraduate exploring the subsurface.</span></h1>
-      <p>I am a geology student interested in subsurface geology, geophysics, sedimentology, energy resources and the ways geological knowledge can help us understand the Earth.</p>
-      <a class="btn" href={projects}>Explore my work →</a>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow">GeoSmart · Camila Fernández</div>
+        <h1>Reading the Earth<br /><span>from surface to subsurface.</span></h1>
+        <p>I’m a geology undergraduate interested in subsurface geology, geophysics, sedimentology and energy resources — and in communicating geological ideas clearly.</p>
+        <div class="hero-actions">
+          <a class="btn" href={projects}>Explore my work →</a>
+          <a class="text-link" href={about}>Get to know me</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual-label">GEOLOGY / DATA / INTERPRETATION</div>
+        <div class="strata strata-one"></div>
+        <div class="strata strata-two"></div>
+        <div class="strata strata-three"></div>
+        <div class="strata strata-four"></div>
+        <div class="seismic-line"></div>
+        <div class="depth-label">subsurface</div>
+      </div>
     </div>
   </section>
 
-  <section class="container triad">
-    <article><h3>Geoscience</h3><p>Sedimentology · Petrology · Geophysics · Energy</p></article>
-    <article><h3>Tools</h3><p>QGIS · SedLog · Seismic interpretation · Data analysis</p></article>
-    <article><h3>Projects</h3><p>Selected academic, personal and field-based work</p></article>
+  <section class="container intro-strip">
+    <div><span class="strip-number">01</span><strong>Geoscience</strong><p>Sedimentology · Geophysics · Subsurface · Energy</p></div>
+    <div><span class="strip-number">02</span><strong>Methods</strong><p>QGIS · SedLog · Seismic interpretation · Data analysis</p></div>
+    <div><span class="strip-number">03</span><strong>Perspective</strong><p>Science, field observations and clear communication</p></div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <div><div class="section-kicker">Selected work</div><h2>Projects</h2></div>
-        <p class="muted">A growing collection of geological work, methods and interpretations.</p>
+        <div><div class="section-kicker">Selected work</div><h2>Things I’m exploring</h2></div>
+        <p class="muted">A growing collection of academic projects, geological observations and interpretations.</p>
       </div>
       <div class="projects-grid">
-        <a class="card" href={projects}><div class="card-image"></div><div class="card-body"><div class="card-tag">Geophysics</div><h3>Seismic Interpretation</h3><p>Exploring subsurface structures through seismic data and geological reasoning.</p></div></a>
-        <a class="card" href={projects}><div class="card-image"></div><div class="card-body"><div class="card-tag">Sedimentology</div><h3>Sedimentary Environments</h3><p>From observations and logs to depositional interpretations.</p></div></a>
-        <a class="card" href={projects}><div class="card-image"></div><div class="card-body"><div class="card-tag">GIS</div><h3>Geological Mapping</h3><p>Spatial data, maps and geological stories built with GIS.</p></div></a>
+        <a class="card" href={projects}><div class="card-image seismic-card"><span>01 / SEISMIC</span></div><div class="card-body"><div class="card-tag">Geophysics</div><h3>Seismic Interpretation</h3><p>Reading subsurface structures through seismic data and geological reasoning.</p></div></a>
+        <a class="card" href={projects}><div class="card-image sediment-card"><span>02 / SEDIMENTS</span></div><div class="card-body"><div class="card-tag">Sedimentology</div><h3>Sedimentary Environments</h3><p>From observations and logs to depositional interpretations.</p></div></a>
+        <a class="card" href={projects}><div class="card-image gis-card"><span>03 / MAPPING</span></div><div class="card-body"><div class="card-tag">GIS</div><h3>Geological Mapping</h3><p>Spatial data, maps and geological stories built with GIS.</p></div></a>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background:var(--cream)">
+  <section class="section notes-section">
+    <div class="container">
+      <div class="notes">
+        <article class="note-feature">
+          <div class="section-kicker">A little more personal</div>
+          <h2>Why geology?</h2>
+          <p>I like geology because it sits somewhere between detective work and science: you rarely get to see the whole story, so you learn to build it from evidence.</p>
+          <p class="muted">GeoSmart is my space to document that process — what I’m learning, what I’m working on and where I want to take it next.</p>
+          <a class="btn" href={about}>Read my story →</a>
+        </article>
+        <aside class="cv-callout">
+          <div class="card-tag">Looking for the professional version?</div>
+          <h3>Want to know what I can do?</h3>
+          <p>Have a look at my background, experience, skills and current academic focus.</p>
+          <a class="text-link dark" href={cv}>View my CV →</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section field-section">
     <div class="container">
       <div class="section-head">
         <div><div class="section-kicker">Latest from GeoSmart</div><h2>Field Notes</h2></div>
+        <a class="text-link dark" href={fieldNotes}>See all notes →</a>
       </div>
-      <div class="notes">
-        <article class="note-feature">
-          <div class="card-tag">Geophysics · Coming soon</div>
-          <h3>Why does seismic interpretation actually matter?</h3>
-          <p class="muted">Seismic data is more than pretty lines on a screen. It is a window into the Earth's history and a tool for understanding structures, resources and risk.</p>
-          <a class="btn" href={fieldNotes}>Read the notes →</a>
-        </article>
-        <div class="note-list">
-          <article class="note"><div class="card-tag">Norway</div><h4>Geology in Trondheim</h4><p class="muted">Field notes from a geology student discovering Norway.</p></article>
-          <article class="note"><div class="card-tag">Learning</div><h4>Things I wish I knew before studying geology</h4><p class="muted">Lessons from the first years of a geological education.</p></article>
-        </div>
+      <div class="note-list home-notes">
+        <article class="note"><div class="card-tag">Geophysics</div><h4>Why does seismic interpretation actually matter?</h4><p class="muted">Seismic data is more than pretty lines on a screen. It is a window into the Earth's history and a tool for understanding structures, resources and risk.</p></article>
+        <article class="note"><div class="card-tag">Norway</div><h4>Geology in Trondheim</h4><p class="muted">Field notes from a geology student discovering Norway.</p></article>
+        <article class="note"><div class="card-tag">Learning</div><h4>Things I wish I knew before studying geology</h4><p class="muted">Lessons from the first years of a geological education.</p></article>
       </div>
     </div>
   </section>
