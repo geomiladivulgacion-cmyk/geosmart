@@ -3,6 +3,13 @@ import Logo from '../components/Logo.astro';
 import '../styles/global.css';
 const { title = 'GeoSmart — Camila Fernández', description = 'Geoscience portfolio of Camila Fernández.' } = Astro.props;
 const path = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
+const home = base;
+const projects = `${base}projects/`;
+const fieldNotes = `${base}field-notes/`;
+const about = `${base}about/`;
+const cv = `${base}cv/`;
+const contact = `${base}contact/`;
 ---
 <!doctype html>
 <html lang="en">
@@ -15,17 +22,17 @@ const path = Astro.url.pathname;
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="/">
+      <a class="brand" href={home}>
         <Logo />
         <span class="brand-name">GeoSmart</span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a class={path === '/' ? 'active' : ''} href="/">Home</a>
-        <a class={path.startsWith('/projects') ? 'active' : ''} href="/projects/">Projects</a>
-        <a class={path.startsWith('/field-notes') ? 'active' : ''} href="/field-notes/">Field Notes</a>
-        <a class={path.startsWith('/about') ? 'active' : ''} href="/about/">About</a>
-        <a class={path.startsWith('/cv') ? 'active' : ''} href="/cv/">CV</a>
-        <a class={path.startsWith('/contact') ? 'active' : ''} href="/contact/">Contact</a>
+        <a class={path === home ? 'active' : ''} href={home}>Home</a>
+        <a class={path.startsWith(projects) ? 'active' : ''} href={projects}>Projects</a>
+        <a class={path.startsWith(fieldNotes) ? 'active' : ''} href={fieldNotes}>Field Notes</a>
+        <a class={path.startsWith(about) ? 'active' : ''} href={about}>About</a>
+        <a class={path.startsWith(cv) ? 'active' : ''} href={cv}>CV</a>
+        <a class={path.startsWith(contact) ? 'active' : ''} href={contact}>Contact</a>
       </nav>
       <button class="menu" aria-label="Open menu">☰</button>
     </div>
@@ -38,9 +45,9 @@ const path = Astro.url.pathname;
         <small>Geology made visible.</small>
       </div>
       <div class="footer-links">
-        <a href="/projects/">Projects</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
+        <a href={projects}>Projects</a>
+        <a href={about}>About</a>
+        <a href={contact}>Contact</a>
       </div>
     </div>
   </footer>
