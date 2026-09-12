@@ -4,8 +4,6 @@ import '../styles/global.css';
 const { title = 'GeoSmart — Camila Fernández', description = 'Geoscience portfolio of Camila Fernández.' } = Astro.props;
 const path = Astro.url.pathname;
 const base = import.meta.env.BASE_URL;
-const cv = `${base}documents/Curriculum_CamilaFernández-9.pdf`;
-const home = base;
 const projects = `${base}projects/`;
 const fieldNotes = `${base}field-notes/`;
 const about = `${base}about/`;
@@ -13,8 +11,10 @@ const contact = `${base}contact/`;
 const email = 'mailto:c.fernandez@geosmart.es';
 const instagram = 'https://www.instagram.com/_geomila_/';
 const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-190b4a384/es/';
-const canonical = new URL(Astro.url.pathname.replace(/^\/geosmart/, ''), 'https://geosmart.es');
+const canonicalPath = Astro.url.pathname.replace(/^\/geosmart/, '') || '/';
+const canonical = new URL(canonicalPath, 'https://geosmart.es');
 const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
+const pageKeywords = 'Camila Fernández, geology, geology student, geoscience, subsurface, geophysics, sedimentology, petroleum geology, offshore geoscience, North Sea, Norway, scientific communication';
 ---
 <!doctype html>
 <html lang="en">
@@ -22,19 +22,25 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="description" content={description} />
+  <meta name="author" content="Camila Fernández" />
+  <meta name="keywords" content={pageKeywords} />
   <meta name="theme-color" content="#0f3d3e" />
   <link rel="canonical" href={canonical} />
   <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+  <link rel="sitemap" href={`${base}sitemap.xml`} />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GeoSmart" />
+  <meta property="og:locale" content="en_GB" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={socialImage} />
+  <meta property="og:image:alt" content="GeoSmart — Camila Fernández geology portfolio" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={socialImage} />
-  <link rel="sitemap" href={`${base}sitemap.xml`} />
+  <meta name="twitter:image:alt" content="GeoSmart — Camila Fernández geology portfolio" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -42,19 +48,21 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
     url: 'https://geosmart.es/',
     email: 'c.fernandez@geosmart.es',
     jobTitle: 'Geology Undergraduate',
-    sameAs: [instagram, linkedin]
+    description: 'Geology undergraduate interested in subsurface, geophysics, sedimentology, petroleum-focused offshore geoscience and scientific communication.',
+    sameAs: [instagram, linkedin],
+    knowsAbout: ['Geology', 'Geophysics', 'Sedimentology', 'Subsurface geology', 'Petroleum geology', 'Scientific communication', 'GIS']
   })} />
   <title>{title}</title>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href={home}>
+      <a class="brand" href={base} aria-label="GeoSmart home">
         <Logo />
         <span class="brand-name">GeoSmart</span>
       </a>
       <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
-        <a class={path === home ? 'active' : ''} href={home}>Home</a>
+        <a class={path === base ? 'active' : ''} href={base}>Home</a>
         <a class={path.startsWith(projects) ? 'active' : ''} href={projects}>Projects</a>
         <a class={path.startsWith(fieldNotes) ? 'active' : ''} href={fieldNotes}>Field Notes</a>
         <a class={path.startsWith(about) ? 'active' : ''} href={about}>About</a>
