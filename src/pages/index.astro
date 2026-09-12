@@ -5,10 +5,17 @@ const projects = `${base}projects/`;
 const fieldNotes = `${base}field-notes/`;
 const about = `${base}about/`;
 const cv = `${base}cv/`;
-const heroImage = 'https://imaggeo.egu.eu/media/uploads/2022/09/05/17075/c9d0dc7c9dffd4c12927dfd75b2af1c2981dedc6c219cc67d97028a71a65037a.jpg';
+const heroImage = 'https://imaggeo.egu.eu/media/uploads/2022/09/05/bb70405ca2ae62e5dbd882d989c59f2db.jpg';
 ---
 <BaseLayout title="GeoSmart — Camila Fernández" description="Camila Fernández — geology undergraduate exploring the subsurface.">
   <section class="hero">
+    <div class="hero-photo" aria-label="Folded gneiss outcrop in Norway">
+      <img src={heroImage} alt="Folded gneiss outcrop in Norway" />
+      <div class="hero-photo-overlay"></div>
+      <div class="hero-visual-label">GEOLOGY / FIELD / NORWAY</div>
+      <div class="depth-label">subsurface</div>
+    </div>
+
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="eyebrow">GeoSmart · Camila Fernández</div>
@@ -18,12 +25,6 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2022/09/05/17075/c9d0dc7
           <a class="btn" href={projects}>Explore my work →</a>
           <a class="text-link" href={about}>Get to know me</a>
         </div>
-      </div>
-      <div class="hero-visual hero-photo" aria-label="Folded gneiss outcrop in Norway">
-        <img src={heroImage} alt="Folded gneiss outcrop in Norway" />
-        <div class="hero-photo-overlay"></div>
-        <div class="hero-visual-label">GEOLOGY / FIELD / NORWAY</div>
-        <div class="depth-label">subsurface</div>
       </div>
     </div>
   </section>
