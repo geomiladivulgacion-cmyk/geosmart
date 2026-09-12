@@ -24,6 +24,7 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
   <meta name="description" content={description} />
   <meta name="theme-color" content="#0f3d3e" />
   <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
@@ -34,6 +35,15 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={socialImage} />
   <link rel="sitemap" href={`${base}sitemap.xml`} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Camila Fernández',
+    url: 'https://geosmart.es/',
+    email: 'c.fernandez@geosmart.es',
+    jobTitle: 'Geology Undergraduate',
+    sameAs: [instagram, linkedin]
+  })} />
   <title>{title}</title>
 </head>
 <body>
@@ -48,7 +58,7 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
         <a class={path.startsWith(projects) ? 'active' : ''} href={projects}>Projects</a>
         <a class={path.startsWith(fieldNotes) ? 'active' : ''} href={fieldNotes}>Field Notes</a>
         <a class={path.startsWith(about) ? 'active' : ''} href={about}>About</a>
-  <a class={path.startsWith(cv) ? 'active' : ''} href={cv}>CV</a>
+        <a class={path.startsWith(cv) ? 'active' : ''} href={cv} target="_blank" rel="noopener noreferrer">CV</a>
         <a class={path.startsWith(contact) ? 'active' : ''} href={contact}>Contact</a>
       </nav>
       <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation">☰</button>
@@ -59,7 +69,7 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
     <div class="container footer-inner">
       <div>
         <div class="footer-brand">GeoSmart</div>
-        <small>Geology made visible.</small>
+        <small>Camila Fernández · Geology · Subsurface · Scientific communication</small>
       </div>
       <div class="footer-links">
         <a href={projects}>Projects</a>
