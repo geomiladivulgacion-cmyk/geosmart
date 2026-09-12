@@ -32,6 +32,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Download temporary hero image
+        run: |
+          mkdir -p public/images
+          curl -L --fail --retry 3 "https://imaggeo.egu.eu/media/uploads/2022/09/05/bb70405ca2ae62e5dbd882d989c59f2db.jpg" -o public/images/hero.jpg
+
       - name: Build Astro site
         run: npm run build
 
@@ -52,4 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
