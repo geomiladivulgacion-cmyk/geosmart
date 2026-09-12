@@ -5,18 +5,20 @@ const cv = `${base}documents/Curriculum_CamilaFernández-9.pdf`;
 const email = 'mailto:c.fernandez@geosmart.es';
 ---
 <BaseLayout title="About — GeoSmart" description="Get to know Camila Fernández — geology undergraduate exploring subsurface and offshore geoscience through curiosity, technical thinking and scientific communication.">
-  <section class="page-hero">
+  <section class="page-hero about-hero">
     <div class="container">
       <div class="section-kicker">The geologist behind GeoSmart</div>
       <h1>Curious about<br />what lies beneath.</h1>
       <p class="muted">A geology undergraduate building a path towards subsurface and offshore geoscience — and curious about almost everything else, too.</p>
+      <div class="about-motif" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
     </div>
   </section>
 
-  <section class="page">
+  <section class="page about-page">
     <div class="container profile">
-      <div class="profile-photo">
-        <span>Your field photo<br />goes here.</span>
+      <div class="profile-column">
+        <div class="profile-photo"><span>Your field photo<br />goes here.</span></div>
+        <div class="profile-caption"><span>FIELD / PROFILE</span><span>Venezuela → Spain → Norway</span></div>
       </div>
 
       <div class="prose">
@@ -30,9 +32,7 @@ const email = 'mailto:c.fernandez@geosmart.es';
           <div class="section-kicker">Currently · Trondheim, Norway</div>
           <h3>Building my subsurface toolkit.</h3>
           <p>I'm studying at <strong>NTNU during 2026–27</strong>, complementing my Geology degree at the Universidad Complutense de Madrid with petroleum-focused geoscience coursework. I'm particularly interested in subsurface geology, geophysics, sedimentology, geochemistry, seismic interpretation, petrophysics and geological reservoirs.</p>
-          <div class="current-tags">
-            <span>Subsurface</span><span>Geophysics</span><span>Sedimentology</span><span>Geochemistry</span><span>Petroleum</span><span>Norway</span>
-          </div>
+          <div class="current-tags"><span>Subsurface</span><span>Geophysics</span><span>Sedimentology</span><span>Geochemistry</span><span>Petroleum</span><span>Norway</span></div>
         </div>
 
         <h2>Why subsurface?</h2>
@@ -63,13 +63,11 @@ const email = 'mailto:c.fernandez@geosmart.es';
         <p>Most importantly, I want science communication to encourage <strong>curiosity and critical thinking</strong>, rather than simply giving people facts.</p>
         <p><strong>Because there is so much more to geology than rocks.</strong></p>
 
-        <div class="current-box">
+        <div class="current-box beyond-box">
           <div class="section-kicker">Beyond the CV</div>
           <h3>Curious about almost everything.</h3>
           <p>Outside geology, I love travelling, maps, mountains, languages, technology, music, books and theatre. I can spend far too long analysing a novel, a film, a character or a map — usually asking very specific questions nobody asked me to investigate.</p>
-          <div class="current-tags">
-            <span>Travel</span><span>Maps</span><span>Languages</span><span>Literature</span><span>Music</span><span>Technology</span><span>Film</span><span>Theatre</span>
-          </div>
+          <div class="current-tags"><span>Travel</span><span>Maps</span><span>Languages</span><span>Literature</span><span>Music</span><span>Technology</span><span>Film</span><span>Theatre</span></div>
         </div>
 
         <h2>A little more about my path</h2>
@@ -78,17 +76,35 @@ const email = 'mailto:c.fernandez@geosmart.es';
           <p><strong>NTNU, Trondheim</strong><br /><span>Petroleum-focused geoscience coursework · 2026–27</span></p>
         </div>
 
-        <div class="contact-box">
+        <div class="contact-box about-cta">
           <div class="section-kicker">So, what's next?</div>
           <h2>I want to see how far I can go.</h2>
           <p>I'm building towards a career in subsurface and offshore geoscience while continuing to develop the skills that make me more than a geology student: scientific communication, project coordination, international collaboration and the ability to keep learning.</p>
           <p>This page is the story. For the full professional picture — experience, education, certifications and skills — have a look at my CV.</p>
-          <div class="about-links">
-            <a class="btn" href={cv} target="_blank" rel="noopener noreferrer">Download my CV →</a>
-            <a class="text-link dark" href={email}>Let's talk →</a>
-          </div>
+          <div class="about-links"><a class="btn" href={cv} target="_blank" rel="noopener noreferrer">Download my CV →</a><a class="text-link dark" href={email}>Let's talk →</a></div>
         </div>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .about-hero { position:relative; overflow:hidden; }
+  .about-hero::after { content:'01 / ABOUT'; position:absolute; right:5%; bottom:20%; color:rgba(15,61,62,.16); font-size:.62rem; font-weight:700; letter-spacing:.2em; }
+  .about-motif { position:absolute; right:10%; top:28%; width:150px; height:150px; border:1px solid rgba(15,61,62,.14); border-radius:50%; transform:rotate(-18deg); }
+  .about-motif::before,.about-motif::after { content:''; position:absolute; inset:20px; border:1px solid rgba(245,130,32,.24); border-radius:50%; }
+  .about-motif::after { inset:55px; }
+  .about-motif span { position:absolute; display:block; width:5px; height:5px; border-radius:50%; background:var(--orange); }
+  .about-motif span:nth-child(1){left:12px;top:45px}.about-motif span:nth-child(2){right:18px;top:20px}.about-motif span:nth-child(3){right:28px;bottom:26px}.about-motif span:nth-child(4){left:35px;bottom:14px}
+  .profile-column { position:sticky; top:110px; }
+  .profile-photo { position:relative; box-shadow:12px 12px 0 rgba(245,130,32,.12); }
+  .profile-photo::after { content:'FIELD / GEOLOGY'; position:absolute; left:18px; bottom:18px; color:rgba(255,255,255,.55); font-size:.58rem; font-weight:700; letter-spacing:.15em; }
+  .profile-caption { display:flex; justify-content:space-between; gap:15px; margin-top:12px; color:#7a807d; font-size:.58rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+  .about-page .prose h2 { position:relative; }
+  .about-page .prose h2::before { content:'—'; position:absolute; left:-34px; color:var(--orange); font-weight:400; }
+  .beyond-box { position:relative; overflow:hidden; }
+  .beyond-box::after { content:'✦'; position:absolute; right:28px; top:22px; color:rgba(245,130,32,.25); font-size:2rem; }
+  .about-cta { position:relative; overflow:hidden; }
+  .about-cta::after { content:'CURIOUS'; position:absolute; right:-10px; bottom:-30px; color:rgba(255,255,255,.035); font:700 5rem/1 'Montserrat',sans-serif; letter-spacing:.08em; }
+  @media (max-width:800px){.about-motif{width:90px;height:90px;right:5%;top:45%}.about-motif::before{inset:12px}.about-motif::after{inset:33px}.profile-column{position:static}.profile-caption{display:block}.profile-caption span{display:block;margin-top:5px}.about-page .prose h2::before{display:none}.about-hero::after{display:none}}
+</style>
