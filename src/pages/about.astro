@@ -2,13 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 const cv = `${base}cv/`;
+const email = 'mailto:c.fernandez@geosmart.es';
 ---
-<BaseLayout title="About — GeoSmart" description="About Camila Fernández — geology undergraduate, geoscience communicator and aspiring subsurface geologist.">
+<BaseLayout title="About — GeoSmart" description="Get to know Camila Fernández — geology undergraduate building a path towards petroleum-focused subsurface and offshore geoscience.">
   <section class="page-hero">
     <div class="container">
       <div class="section-kicker">The geologist behind GeoSmart</div>
       <h1>Curious about<br />what lies beneath.</h1>
-      <p class="muted">A geology student building a path towards subsurface and offshore geoscience.</p>
+      <p class="muted">A geology student building a path towards petroleum-focused subsurface and offshore geoscience.</p>
     </div>
   </section>
 
@@ -21,34 +22,40 @@ const cv = `${base}cv/`;
       <div class="prose">
         <p class="section-kicker">Hi, I'm Camila.</p>
         <h2>I like geology because it is part science, part detective work.</h2>
-        <p>I'm a geology undergraduate at the Universidad Complutense de Madrid, currently spending the 2026–27 academic year at NTNU in Trondheim. I'm particularly interested in the subsurface: how geological history, physical properties and geophysical data come together to help us understand what we cannot see directly.</p>
-        <p>My interests sit at the intersection of <strong>subsurface geology, geophysics, sedimentology and energy resources</strong>, with a growing focus on seismic interpretation and geological reservoirs.</p>
+        <p>I'm a geology undergraduate at the Universidad Complutense de Madrid, currently continuing my training at NTNU in Trondheim. I'm particularly interested in the subsurface: how geological history, physical properties and geophysical data come together to help us understand what we cannot see directly.</p>
+        <p>My interests sit at the intersection of <strong>subsurface geology, geophysics, sedimentology and energy resources</strong>, with a growing focus on seismic interpretation, petrophysics and geological reservoirs.</p>
 
-        <h2>Where I want to go</h2>
-        <p>I'm working towards a career in <strong>offshore and North Sea geoscience</strong>, especially exploration and subsurface work. I want to keep developing the technical skills needed to interpret geological and geophysical data while understanding the bigger geological story behind them.</p>
-        <p>For me, good geoscience is not only about getting an interpretation right. It's also about being able to explain <em>why</em> it makes sense.</p>
+        <h2>Where I'm heading</h2>
+        <p>I'm building towards a career in <strong>petroleum-focused offshore and North Sea geoscience</strong>, especially exploration and subsurface work. At NTNU, I'm expanding my Bachelor's training through petroleum-focused geoscience coursework and subjects that complement what is available in my degree in Spain.</p>
+        <p>I want to keep developing the technical skills needed to interpret geological and geophysical data while understanding the bigger geological story behind them. For me, good geoscience is not only about getting an interpretation right. It's also about being able to explain <em>why</em> it makes sense.</p>
 
         <h2>What I'm building</h2>
         <ul>
-          <li><strong>Subsurface &amp; offshore geology</strong> — geological reasoning below the surface and in energy-related settings.</li>
+          <li><strong>Subsurface &amp; petroleum geology</strong> — geological reasoning below the surface and in energy-related settings.</li>
           <li><strong>Geophysics</strong> — seismic interpretation and using geophysical evidence to understand structures.</li>
-          <li><strong>Sedimentology</strong> — depositional environments, sedimentary records and reservoir thinking.</li>
+          <li><strong>Sedimentology &amp; reservoirs</strong> — depositional environments, sedimentary records and reservoir thinking.</li>
           <li><strong>GIS &amp; geological mapping</strong> — turning spatial data into useful geological information.</li>
           <li><strong>Scientific communication</strong> — making geological ideas understandable without making them less rigorous.</li>
         </ul>
 
-        <h2>Academic path</h2>
+        <h2>More than geology</h2>
+        <p>My background also includes <strong>project coordination, technical documentation, client and cross-team communication, international business support</strong> and digital operations. I enjoy working where technical knowledge has to become clear, organised and useful to other people.</p>
+        <p>Through science outreach and <strong>@_geomila_</strong>, I also share geology in a way that feels curious, visual and approachable. GeoSmart brings those two sides together: the technical work I'm learning to do and the stories that make geology worth looking at in the first place.</p>
+
+        <h2>A little more about my path</h2>
         <div class="timeline-mini">
-          <p><strong>Universidad Complutense de Madrid</strong><br /><span>Geology · 2021–present</span></p>
-          <p><strong>NTNU, Trondheim</strong><br /><span>Erasmus exchange · 2026–27</span></p>
+          <p><strong>Universidad Complutense de Madrid</strong><br /><span>BSc in Geology · 2021–present</span></p>
+          <p><strong>NTNU, Trondheim</strong><br /><span>Petroleum-focused geoscience coursework · 2026–27</span></p>
         </div>
 
-        <h2>Beyond the degree</h2>
-        <p>I'm also interested in the space between science and people. Through science outreach and <strong>@_geomila_</strong>, I enjoy sharing geology in a way that feels curious, visual and approachable. GeoSmart brings those two sides together: the technical work I'm learning to do and the stories that make geology worth looking at in the first place.</p>
-
-        <div class="about-links">
-          <a class="btn" href={cv}>See my CV →</a>
-          <a class="text-link dark" href="mailto:c.fernandez@geosmart.es">Get in touch</a>
+        <div class="contact-box">
+          <div class="section-kicker">Like what you see?</div>
+          <h2>Want to know more?</h2>
+          <p>This page is the short version. For the full picture — experience, education, certifications, skills and everything in between — have a look at my CV.</p>
+          <div class="about-links">
+            <a class="btn" href={cv}>Download my CV →</a>
+            <a class="text-link dark" href={email}>Let's talk →</a>
+          </div>
         </div>
       </div>
     </div>
