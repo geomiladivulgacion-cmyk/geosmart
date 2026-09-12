@@ -1,0 +1,48 @@
+---
+import Logo from '../components/Logo.astro';
+import '../styles/global.css';
+const { title = 'GeoSmart — Camila Fernández', description = 'Geoscience portfolio of Camila Fernández.' } = Astro.props;
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <Logo />
+        <span class="brand-name">GeoSmart</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class={path === '/' ? 'active' : ''} href="/">Home</a>
+        <a class={path.startsWith('/projects') ? 'active' : ''} href="/projects/">Projects</a>
+        <a class={path.startsWith('/field-notes') ? 'active' : ''} href="/field-notes/">Field Notes</a>
+        <a class={path.startsWith('/about') ? 'active' : ''} href="/about/">About</a>
+        <a class={path.startsWith('/cv') ? 'active' : ''} href="/cv/">CV</a>
+        <a class={path.startsWith('/contact') ? 'active' : ''} href="/contact/">Contact</a>
+      </nav>
+      <button class="menu" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+  <main><slot /></main>
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">GeoSmart</div>
+        <small>Geology made visible.</small>
+      </div>
+      <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

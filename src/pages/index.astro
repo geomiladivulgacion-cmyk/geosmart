@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="GeoSmart — Camila Fernández" description="Camila Fernández — geology undergraduate exploring the subsurface.">
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="eyebrow">Welcome to GeoSmart</div>
+      <h1>Camila Fernández <span>Geology undergraduate exploring the subsurface.</span></h1>
+      <p>I am a geology student interested in subsurface geology, geophysics, sedimentology, energy resources and the ways geological knowledge can help us understand the Earth.</p>
+      <a class="btn" href="/projects/">Explore my work →</a>
+    </div>
+  </section>
+
+  <section class="container triad">
+    <article><h3>Geoscience</h3><p>Sedimentology · Petrology · Geophysics · Energy</p></article>
+    <article><h3>Tools</h3><p>QGIS · SedLog · Seismic interpretation · Data analysis</p></article>
+    <article><h3>Projects</h3><p>Selected academic, personal and field-based work</p></article>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="section-kicker">Selected work</div><h2>Projects</h2></div>
+        <p class="muted">A growing collection of geological work, methods and interpretations.</p>
+      </div>
+      <div class="projects-grid">
+        <a class="card" href="/projects/"><div class="card-image"></div><div class="card-body"><div class="card-tag">Geophysics</div><h3>Seismic Interpretation</h3><p>Exploring subsurface structures through seismic data and geological reasoning.</p></div></a>
+        <a class="card" href="/projects/"><div class="card-image"></div><div class="card-body"><div class="card-tag">Sedimentology</div><h3>Sedimentary Environments</h3><p>From observations and logs to depositional interpretations.</p></div></a>
+        <a class="card" href="/projects/"><div class="card-image"></div><div class="card-body"><div class="card-tag">GIS</div><h3>Geological Mapping</h3><p>Spatial data, maps and geological stories built with GIS.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--cream)">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="section-kicker">Latest from GeoSmart</div><h2>Field Notes</h2></div>
+      </div>
+      <div class="notes">
+        <article class="note-feature">
+          <div class="card-tag">Geophysics · Coming soon</div>
+          <h3>Why does seismic interpretation actually matter?</h3>
+          <p class="muted">Seismic data is more than pretty lines on a screen. It is a window into the Earth's history and a tool for understanding structures, resources and risk.</p>
+          <a class="btn" href="/field-notes/">Read the notes →</a>
+        </article>
+        <div class="note-list">
+          <article class="note"><div class="card-tag">Norway</div><h4>Geology in Trondheim</h4><p class="muted">Field notes from a geology student discovering Norway.</p></article>
+          <article class="note"><div class="card-tag">Learning</div><h4>Things I wish I knew before studying geology</h4><p class="muted">Lessons from the first years of a geological education.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
