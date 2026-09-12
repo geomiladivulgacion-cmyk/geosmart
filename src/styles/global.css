@@ -44,14 +44,10 @@ img { max-width:100%; display:block; }
 .text-link.dark { color:var(--green); border-color:rgba(15,61,62,.3); }
 
 .hero-visual { position:relative; min-height:410px; border-left:1px solid rgba(255,255,255,.18); overflow:hidden; background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(0,0,0,.12)); }
-.hero-visual-label { position:absolute; top:18px; right:0; color:rgba(255,255,255,.5); font-size:.58rem; letter-spacing:.16em; writing-mode:vertical-rl; }
-.strata { position:absolute; left:-10%; width:125%; height:95px; border-top:1px solid rgba(245,130,32,.55); transform:rotate(-10deg); opacity:.82; }
-.strata-one { top:95px; background:rgba(245,130,32,.13); }
-.strata-two { top:165px; background:rgba(255,255,255,.07); }
-.strata-three { top:235px; background:rgba(245,130,32,.08); }
-.strata-four { top:305px; background:rgba(255,255,255,.06); }
-.seismic-line { position:absolute; width:80%; height:180px; right:-5%; top:110px; border-top:1px solid rgba(255,255,255,.45); border-bottom:1px solid rgba(255,255,255,.18); transform:skewY(-18deg) rotate(-4deg); background:repeating-linear-gradient(0deg,transparent 0 13px,rgba(255,255,255,.12) 14px 15px); }
-.depth-label { position:absolute; bottom:18px; left:0; color:rgba(255,255,255,.48); font:italic 1.2rem 'Playfair Display',serif; }
+.hero-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.hero-photo-overlay { position:absolute; inset:0; background:linear-gradient(90deg,rgba(15,61,62,.48),rgba(15,61,62,.04) 70%),linear-gradient(0deg,rgba(9,47,48,.42),transparent 45%); }
+.hero-visual-label { position:absolute; top:18px; right:0; color:rgba(255,255,255,.72); font-size:.58rem; letter-spacing:.16em; writing-mode:vertical-rl; text-shadow:0 1px 8px rgba(0,0,0,.25); }
+.depth-label { position:absolute; bottom:18px; left:22px; color:rgba(255,255,255,.82); font:italic 1.2rem 'Playfair Display',serif; text-shadow:0 1px 8px rgba(0,0,0,.3); }
 
 .intro-strip { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--line); }
 .intro-strip > div { padding:36px 28px 38px; border-right:1px solid var(--line); }
