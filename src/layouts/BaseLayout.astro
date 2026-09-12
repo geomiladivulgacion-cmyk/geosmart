@@ -12,7 +12,7 @@ const contact = `${base}contact/`;
 const email = 'mailto:c.fernandez@geosmart.es';
 const instagram = 'https://www.instagram.com/_geomila_/';
 const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-190b4a384/es/';
-const canonical = new URL(Astro.url.pathname, 'https://geosmart.es');
+const canonical = new URL(Astro.url.pathname.replace(/^\/geosmart/, ''), 'https://geosmart.es');
 const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
 ---
 <!doctype html>
@@ -32,7 +32,7 @@ const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={socialImage} />
-  <link rel="sitemap" href={`${base}sitemap-index.xml`} />
+  <link rel="sitemap" href={`${base}sitemap.xml`} />
   <title>{title}</title>
 </head>
 <body>
