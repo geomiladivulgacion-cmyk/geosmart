@@ -2,50 +2,53 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Field Notes — GeoSmart" description="Field notes, geological explanations and learning notes from Camila Fernández on geology, Norway, subsurface and scientific curiosity.">
-  <section class="page-hero">
+  <section class="page-hero notes-hero">
     <div class="container">
       <div class="section-kicker">Geology · Norway · Learning</div>
       <h1>Field Notes</h1>
       <p class="muted">The curious side of GeoSmart: geological ideas, observations, explanations and lessons from learning to read the Earth.</p>
+      <div class="notes-compass" aria-hidden="true"><span>N</span><b>+</b><span>E</span></div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section field-notes-page">
     <div class="container field-notes-layout">
       <article class="note-feature note-article-card">
+        <div class="note-number">FIELD NOTE 01</div>
         <div class="note-meta"><span class="card-tag">Geophysics</span><span>·</span><span>First note</span></div>
         <h2>Why does seismic interpretation actually matter?</h2>
         <p class="lead">Seismic data is more than pretty lines on a screen. It is a way of asking geological questions about structures and histories we cannot see directly.</p>
-        <div class="article-teaser"><span>WHAT I’LL EXPLORE</span><p>Reflections · horizons · faults · geological reasoning · uncertainty</p></div>
-        <div class="note-footer"><span>Field Note 01</span><span>In preparation</span></div>
+        <div class="article-teaser"><span>WHAT I'LL EXPLORE</span><p>Reflections · horizons · faults · geological reasoning · uncertainty</p></div>
+        <div class="note-footer"><span>Reading the subsurface</span><span>In preparation</span></div>
       </article>
 
       <div class="note-list note-grid">
-        <article class="note note-card">
-          <div class="note-meta"><span class="card-tag">Norway</span><span>Field · Trondheim</span></div>
-          <h3>Geology in Trondheim</h3>
-          <p>What changes when you start looking at an everyday landscape with a geologist's eye — and what I am noticing around Trondheim.</p>
-          <div class="note-footer"><span>Field Note 02</span><span>In preparation</span></div>
-        </article>
-        <article class="note note-card">
-          <div class="note-meta"><span class="card-tag">Sedimentology</span><span>Learning</span></div>
-          <h3>Reading a sedimentary log</h3>
-          <p>How observations become a sedimentary interpretation, and why the geological story is rarely as simple as one neat answer.</p>
-          <div class="note-footer"><span>Field Note 03</span><span>In preparation</span></div>
-        </article>
-        <article class="note note-card">
-          <div class="note-meta"><span class="card-tag">Energy</span><span>Subsurface</span></div>
-          <h3>What makes a good reservoir?</h3>
-          <p>Porosity, permeability and the geological history behind reservoir quality — without drowning in jargon.</p>
-          <div class="note-footer"><span>Field Note 04</span><span>In preparation</span></div>
-        </article>
-        <article class="note note-card">
-          <div class="note-meta"><span class="card-tag">Learning</span><span>Student life</span></div>
-          <h3>Things I wish I knew before studying geology</h3>
-          <p>Fieldwork, maps, software, mistakes and the gradual process of learning how to think like a geologist.</p>
-          <div class="note-footer"><span>Field Note 05</span><span>In preparation</span></div>
-        </article>
+        <article class="note note-card"><div class="note-index">02</div><div class="note-meta"><span class="card-tag">Norway</span><span>Field · Trondheim</span></div><h3>Geology in Trondheim</h3><p>What changes when you start looking at an everyday landscape with a geologist's eye — and what I am noticing around Trondheim.</p><div class="note-footer"><span>Landscape</span><span>In preparation</span></div></article>
+        <article class="note note-card"><div class="note-index">03</div><div class="note-meta"><span class="card-tag">Sedimentology</span><span>Learning</span></div><h3>Reading a sedimentary log</h3><p>How observations become a sedimentary interpretation, and why the geological story is rarely as simple as one neat answer.</p><div class="note-footer"><span>Earth history</span><span>In preparation</span></div></article>
+        <article class="note note-card"><div class="note-index">04</div><div class="note-meta"><span class="card-tag">Energy</span><span>Subsurface</span></div><h3>What makes a good reservoir?</h3><p>Porosity, permeability and the geological history behind reservoir quality — without drowning in jargon.</p><div class="note-footer"><span>Reservoirs</span><span>In preparation</span></div></article>
+        <article class="note note-card"><div class="note-index">05</div><div class="note-meta"><span class="card-tag">Learning</span><span>Student life</span></div><h3>Things I wish I knew before studying geology</h3><p>Fieldwork, maps, software, mistakes and the gradual process of learning how to think like a geologist.</p><div class="note-footer"><span>Student geology</span><span>In preparation</span></div></article>
       </div>
     </div>
   </section>
+
+  <section class="notes-bottom"><div class="container"><span class="section-kicker">Keep looking closer</span><p>Some rocks tell stories in layers. Some landscapes tell them in relief. These notes are my way of paying attention.</p><span class="geology-line" aria-hidden="true"></span></div></section>
 </BaseLayout>
+
+<style>
+  .notes-hero { position:relative; overflow:hidden; }
+  .notes-hero::after { content:'FIELD / NOTE / 01'; position:absolute; right:5%; bottom:24%; writing-mode:vertical-rl; color:rgba(15,61,62,.22); font-size:.62rem; font-weight:700; letter-spacing:.2em; }
+  .notes-compass { position:absolute; right:9%; top:34%; width:86px; height:86px; border:1px solid rgba(15,61,62,.16); border-radius:50%; display:grid; place-items:center; color:var(--green); font-size:.6rem; letter-spacing:.15em; }
+  .notes-compass::before,.notes-compass::after { content:''; position:absolute; background:var(--orange); }
+  .notes-compass::before{width:1px;height:112px}.notes-compass::after{height:1px;width:112px}
+  .notes-compass b{font-size:1rem;font-weight:500;z-index:1}.notes-compass span{position:absolute}.notes-compass span:first-child{top:6px}.notes-compass span:last-child{bottom:6px}
+  .note-article-card { position:relative; overflow:hidden; }
+  .note-article-card::after { content:'01'; position:absolute; right:18px; bottom:-25px; color:rgba(15,61,62,.06); font:700 8rem/1 'Playfair Display',serif; }
+  .note-number { color:var(--orange); font-size:.62rem; font-weight:700; letter-spacing:.18em; margin-bottom:18px; }
+  .note-card { position:relative; padding-left:12px; transition:transform .25s ease; }
+  .note-card:hover { transform:translateX(5px); }
+  .note-index { color:rgba(15,61,62,.18); font:600 2.3rem/1 'Playfair Display',serif; margin-bottom:9px; }
+  .notes-bottom { padding:70px 0 85px; background:var(--cream); border-top:1px solid var(--line); }
+  .notes-bottom p { max-width:720px; color:var(--green); font:500 clamp(1.7rem,3.4vw,2.8rem)/1.2 'Playfair Display',serif; margin:14px 0 28px; }
+  .geology-line { display:block; width:100%; height:20px; background:linear-gradient(175deg,transparent 42%,var(--orange) 43% 46%,transparent 47% 60%,rgba(15,61,62,.28) 61% 63%,transparent 64%); opacity:.7; }
+  @media (max-width:800px){.notes-compass{right:6%;top:58%;width:64px;height:64px}.notes-compass::before{height:84px}.notes-compass::after{width:84px}.notes-hero::after{display:none}}
+</style>
