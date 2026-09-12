@@ -12,6 +12,8 @@ const contact = `${base}contact/`;
 const email = 'mailto:c.fernandez@geosmart.es';
 const instagram = 'https://www.instagram.com/_geomila_/';
 const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-190b4a384/es/';
+const canonical = new URL(Astro.url.pathname, 'https://geosmart.es');
+const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
 ---
 <!doctype html>
 <html lang="en">
@@ -19,6 +21,18 @@ const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-1
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="description" content={description} />
+  <meta name="theme-color" content="#0f3d3e" />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={socialImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={socialImage} />
+  <link rel="sitemap" href={`${base}sitemap-index.xml`} />
   <title>{title}</title>
 </head>
 <body>
@@ -28,14 +42,14 @@ const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-1
         <Logo />
         <span class="brand-name">GeoSmart</span>
       </a>
-      <nav class="nav-links" aria-label="Main navigation">
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
         <a class={path === home ? 'active' : ''} href={home}>Home</a>
         <a class={path.startsWith(projects) ? 'active' : ''} href={projects}>Projects</a>
         <a class={path.startsWith(fieldNotes) ? 'active' : ''} href={fieldNotes}>Field Notes</a>
         <a class={path.startsWith(about) ? 'active' : ''} href={about}>About</a>
         <a class={path.startsWith(contact) ? 'active' : ''} href={contact}>Contact</a>
       </nav>
-      <button class="menu" aria-label="Open menu">☰</button>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation">☰</button>
     </div>
   </header>
   <main><slot /></main>
@@ -57,5 +71,21 @@ const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-1
       </div>
     </div>
   </footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    const navigation = document.querySelector('#main-navigation');
+    menu?.addEventListener('click', () => {
+      const open = navigation?.classList.toggle('open') ?? false;
+      menu.setAttribute('aria-expanded', String(open));
+      menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    navigation?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menu?.setAttribute('aria-expanded', 'false');
+        menu?.setAttribute('aria-label', 'Open menu');
+      });
+    });
+  </script>
 </body>
 </html>
