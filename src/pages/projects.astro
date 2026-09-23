@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Projects — GeoSmart" description="Metamorphic Petrology projects by Camila Fernández, covering regional metapelites, contact metamorphism and metabasite P–T evolution.">
+<BaseLayout title="Projects — GeoSmart" description="Geology projects by Camila Fernández, covering metamorphic petrology, structural geology, field mapping and hydrological analysis.">
   <section class="page-hero projects-hero">
     <div class="projects-topo" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
     <div class="container">
@@ -15,7 +15,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <section class="section projects-page">
     <div class="container">
-      <div class="projects-intro"><span class="projects-count">04</span><p>Metamorphic Petrology · field, structural and petrographic studies</p></div>
+      <div class="projects-intro"><span class="projects-count">05</span><p>Geology projects · metamorphic petrology, field studies and hydrology</p></div>
 
       <div class="project-collection">
         <div class="collection-header">
@@ -115,10 +115,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
 
+      <div class="project-collection hydrology-collection">
+        <div class="collection-header">
+          <div class="section-kicker">Collection</div>
+          <h2>HYDROLOGY &amp; WATER RESOURCES</h2>
+        </div>
+
+        <div class="projects-grid hydrology-grid">
+          <article class="card project-card project-hydrology">
+            <div class="card-image hydrology-card"><span>05 / HYDROLOGY</span><i>≈</i><b>CAMPO DE MONTIEL</b></div>
+            <div class="card-body">
+              <div class="card-tag">Hydrology · Basin analysis</div>
+              <h3>Hydrological Study of the Peñarroya Reservoir Basin</h3>
+              <p>A hydrological assessment of the Peñarroya reservoir basin and the Ruidera Lakes area in Campo de Montiel, focused on how precipitation, evapotranspiration, runoff and groundwater contribute to the basin water balance.</p>
+              <p>The study combines manual and QGIS-based watershed delineation with arithmetic means, Thiessen–Voronoi polygons, isohyet methods, Thornthwaite potential evapotranspiration, rating curves and hydrograph separation to evaluate water availability and environmental pressures.</p>
+              <ul class="project-tags">
+                <li>Hydrology</li>
+                <li>Water balance</li>
+                <li>QGIS</li>
+                <li>Watershed delineation</li>
+                <li>Thiessen–Voronoi</li>
+                <li>Evapotranspiration</li>
+                <li>Runoff analysis</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn" href="/documents/Informe%20Hidrico%20Campo%20de%20Montiel_CamilaF.pdf" target="_blank" rel="noopener noreferrer">View project</a>
+                <a class="text-link dark" href="/documents/Informe%20Hidrico%20Campo%20de%20Montiel_CamilaF.pdf" download="Informe Hidrico Campo de Montiel_CamilaF.pdf">Download PDF</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
       <div class="contact-box project-cta">
         <div class="section-kicker">Research focus</div>
-        <h2>Metamorphic petrology in practice.</h2>
-        <p>These reports reflect the core tools of petrographic interpretation: thin-section observation, textural analysis, mineral assemblage identification and the construction of a coherent metamorphic history from mineralogical evidence.</p>
+        <h2>Geology in practice.</h2>
+        <p>These projects bring together field observation, mapping, petrographic interpretation, geomorphology and quantitative analysis to understand how geological processes shape rocks, landscapes and water systems.</p>
         <a class="text-link" href="../contact/">Discuss this work →</a>
       </div>
     </div>
@@ -144,6 +176,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .projects-count{color:var(--orange);font:600 2.4rem/1 'Playfair Display',serif}
 
 .project-collection{margin-top:24px}
+.hydrology-collection{margin-top:82px}
 .collection-header{margin:0 0 26px}
 .collection-header h2{color:var(--green);font:600 clamp(2.1rem,4vw,3.2rem)/1.08 'Playfair Display',serif;margin:10px 0 0}
 
@@ -162,6 +195,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .contact-card{background:linear-gradient(135deg,#1a4747 0%,#2a615b 36%,#d7a15f 37%,#f2dfc9 100%)}
 .basic-card{background:linear-gradient(135deg,#0f3d3e 0%,#214d4e 46%,#b9a06d 47%,#e8dcc6 100%)}
 .santa-maria-card{background:linear-gradient(135deg,#173f3e 0%,#527568 46%,#c4a16e 47%,#f0e4d0 100%)}
+.hydrology-card{background:linear-gradient(135deg,#123e40 0%,#286a64 44%,#82a59a 45%,#d8c395 100%)}
+.sepulveda-card{background:linear-gradient(135deg,#173f3e 0%,#527568 42%,#8f7257 43%,#d9b37e 100%)}
 .card-body{padding:28px 26px 24px}
 .card-tag{color:var(--orange);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .card h3{color:var(--green);font:600 1.7rem/1.08 'Playfair Display',serif;margin:10px 0 12px}
@@ -175,7 +210,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 @media(max-width:800px){
   .projects-page::before{display:none}
+  .projects-hero{min-height:360px;background-position:62% center}
   .projects-grid{grid-template-columns:1fr}
+  .hydrology-collection{margin-top:58px}
+  .field-trips-collection{margin-top:58px}
   .project-card .card-image{height:190px}
   .project-cta{margin-top:55px;padding:32px 22px}
   .projects-count{font-size:3rem}
