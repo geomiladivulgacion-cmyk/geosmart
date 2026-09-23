@@ -14,8 +14,8 @@ const email = 'mailto:c.fernandez@geosmart.es';
 const instagram = 'https://www.instagram.com/_geomila_/';
 const linkedin = 'https://www.linkedin.com/in/camila-isabel-fernández-riveras-190b4a384/es/';
 const canonicalPath = Astro.url.pathname.replace(/^\/geosmart/, '') || '/';
-const canonical = new URL(canonicalPath, 'https://geosmart.es');
-const socialImage = new URL('/og-image.svg', 'https://geosmart.es');
+const canonical = new URL(canonicalPath, 'https://www.geosmart.es');
+const socialImage = new URL('/og-image.svg', 'https://www.geosmart.es');
 const pageKeywords = 'Camila Fernández, geology, geology student, geoscience, subsurface, geophysics, sedimentology, petroleum geology, offshore geoscience, North Sea, Norway, scientific communication';
 ---
 <!doctype html>
@@ -47,7 +47,7 @@ const pageKeywords = 'Camila Fernández, geology, geology student, geoscience, s
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Camila Fernández',
-    url: 'https://geosmart.es/',
+    url: 'https://www.geosmart.es/',
     email: 'c.fernandez@geosmart.es',
     jobTitle: 'Geology Undergraduate',
     description: 'Geology undergraduate interested in subsurface, geophysics, sedimentology, petroleum-focused offshore geoscience and scientific communication.',

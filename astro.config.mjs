@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://geosmart.es',
+  site: 'https://www.geosmart.es',
   base: '/',
   trailingSlash: 'always',
 });
