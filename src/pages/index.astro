@@ -40,13 +40,12 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
     <div class="container">
       <div class="section-head">
         <div><div class="section-kicker">Selected work</div><h2>Things I’m exploring</h2></div>
-        <p class="muted">A growing collection of university projects and geological work. I’m building this portfolio around real work I can show, explain and learn from.</p>
+        <p class="muted">A small selection of geological work I’m especially proud of. For the full collection, head to Projects.</p>
       </div>
       <div class="projects-grid home-projects-grid">
         <a class="card" href={projects}><div class="card-image home-regional-card"><span>01 / REGIONAL</span></div><div class="card-body"><div class="card-tag">Regional metamorphism</div><h3>Regional Metamorphism of Metapelites</h3><p>Field, structural and petrographic study of the Somosierra–Hayedo de Montejo–Berzosa area, including metamorphic zonation and P–T evolution.</p></div></a>
-        <a class="card" href={projects}><div class="card-image home-contact-card"><span>02 / CONTACT</span></div><div class="card-body"><div class="card-tag">Contact metamorphism</div><h3>Contact Metamorphism of Metapelites</h3><p>Petrographic analysis of pelitic rocks, mineral assemblages and the temperature-driven zonation of a metamorphic aureole.</p></div></a>
-        <a class="card" href={projects}><div class="card-image home-metabasite-card"><span>03 / METABASITES</span></div><div class="card-body"><div class="card-tag">Metamorphic facies</div><h3>Metabasites: Petrography and P–T Evolution</h3><p>Thin-section study of basic rocks across a broad range of metamorphic facies and prograde-to-retrograde P–T conditions.</p></div></a>
-        <a class="card" href={projects}><div class="card-image home-santa-card"><span>04 / FIELD STUDY</span></div><div class="card-body"><div class="card-tag">Field geology · Structural geology</div><h3>Santa María de la Alameda</h3><p>Geological mapping and tectonometamorphic interpretation of orthogneisses, leucogneisses, migmatites and ductile shear zones.</p></div></a>
+        <a class="card" href={projects}><div class="card-image home-santa-card"><span>02 / FIELD STUDY</span></div><div class="card-body"><div class="card-tag">Field geology · Structural geology</div><h3>Santa María de la Alameda</h3><p>Geological mapping and tectonometamorphic interpretation of orthogneisses, leucogneisses, migmatites and ductile shear zones.</p></div></a>
+        <a class="card" href={projects}><div class="card-image home-hydrology-card"><span>03 / HYDROLOGY</span></div><div class="card-body"><div class="card-tag">Hydrology · QGIS</div><h3>Hydrological Study of the Peñarroya Reservoir Basin</h3><p>Hydrological analysis of the Campo de Montiel basin combining watershed delineation, water balance, evapotranspiration and runoff methods.</p></div></a>
       </div>
     </div>
   </section>
@@ -87,7 +86,7 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
 </BaseLayout>
 
 <style>
-.home-projects-grid{grid-template-columns:repeat(4,1fr)}
+.home-projects-grid{grid-template-columns:repeat(3,1fr)}
 .home-projects-grid .card{overflow:hidden}
 .home-projects-grid .card-image{aspect-ratio:1.35/1;min-height:170px}
 .home-projects-grid .card h3{font-size:1.2rem}
@@ -96,6 +95,7 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
 .home-contact-card{background:linear-gradient(135deg,#1a4747 0%,#2a615b 38%,#d7a15f 39%,#f2dfc9 100%)}
 .home-metabasite-card{background:linear-gradient(135deg,#0f3d3e 0%,#214d4e 48%,#b9a06d 49%,#e8dcc6 100%)}
 .home-santa-card{background:linear-gradient(135deg,#173f3e 0%,#527568 48%,#c4a16e 49%,#f0e4d0 100%)}
+.home-hydrology-card{background:linear-gradient(135deg,#123e40 0%,#286a64 44%,#82a59a 45%,#d8c395 100%)}
 @media(max-width:1000px){.home-projects-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.home-projects-grid{grid-template-columns:1fr}.home-projects-grid .card-image{min-height:190px}}
 </style>
