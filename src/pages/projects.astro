@@ -103,10 +103,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-.projects-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#f6efe7 0%,#fffdf9 55%,#edf2eb 100%)}
-.projects-hero::before{content:'01';position:absolute;right:5%;top:12%;color:rgba(15,61,62,.055);font:700 clamp(8rem,20vw,18rem)/1 'Playfair Display',serif;letter-spacing:-.08em}
-.projects-hero::after{content:'';position:absolute;right:-90px;bottom:-120px;width:330px;height:330px;border:2px solid rgba(245,130,32,.2);border-radius:50%;box-shadow:0 0 0 24px rgba(245,130,32,.035),0 0 0 50px rgba(15,61,62,.025)}
-.projects-topo{position:absolute;left:-30px;bottom:18px;width:430px;height:150px;opacity:.24;transform:rotate(-4deg)}
+.projects-hero{position:relative;isolation:isolate;overflow:hidden;min-height:430px;background-image:linear-gradient(90deg,rgba(7,42,43,.84) 0%,rgba(15,61,62,.62) 34%,rgba(15,61,62,.12) 72%,rgba(15,61,62,.05) 100%),url('/images/projects.png');background-position:center;background-size:cover}
+.projects-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,42,43,.12),transparent 45%,rgba(7,42,43,.2))}
+.projects-hero::after{content:'';position:absolute;right:5%;bottom:28px;width:120px;height:120px;border:1px solid rgba(255,255,255,.45);border-radius:50%;box-shadow:0 0 0 14px rgba(255,255,255,.08),0 0 0 28px rgba(245,130,32,.18);opacity:.7}
+.projects-hero .container{position:relative;z-index:1}
+.projects-hero .section-kicker{color:#f6c28f}
+.projects-hero h1{color:#fff}
+.projects-hero .muted{max-width:600px;color:rgba(255,255,255,.86)}
+.projects-hero .hero-rule span{background:#f6c28f}
+.projects-topo{position:absolute;left:-30px;bottom:18px;width:430px;height:150px;opacity:.12;transform:rotate(-4deg)}
 .projects-topo span{position:absolute;inset:0;border:1px solid var(--green);border-radius:48% 52% 45% 55%;transform:rotate(var(--r)) scale(var(--s))}
 .projects-topo span:nth-child(1){--r:3deg;--s:.98}.projects-topo span:nth-child(2){--r:-2deg;--s:.82}.projects-topo span:nth-child(3){--r:4deg;--s:.65}.projects-topo span:nth-child(4){--r:-4deg;--s:.48}.projects-topo span:nth-child(5){--r:2deg;--s:.3}
 .hero-rule{display:flex;gap:7px;margin-top:34px;align-items:center}
