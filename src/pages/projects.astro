@@ -115,6 +115,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
 
+      <div class="project-collection reservoir-collection">
+        <div class="collection-header">
+          <div class="section-kicker">Collection</div>
+          <h2>PETROLEUM &amp; RESERVOIR ENGINEERING</h2>
+        </div>
+
+        <div class="projects-grid reservoir-grid">
+          <article class="card project-card project-reservoir">
+            <div class="card-image reservoir-card" aria-label="Reservoir engineering project cover">
+              <span>10 / RESERVOIR ENGINEERING</span>
+              <div class="reservoir-cross-section" aria-hidden="true">
+                <i class="gas"></i><i class="oil"></i><i class="water"></i>
+                <b>GAS</b><b>OIL</b><b>WATER</b>
+              </div>
+              <strong>POROSITY · FLUID DISTRIBUTION · POROSIMETRY</strong>
+            </div>
+            <div class="card-body">
+              <div class="card-tag">Petroleum engineering · Reservoir characterization</div>
+              <h3>Reservoir Engineering: Porosity, Fluid Distribution and Helium Porosimetry</h3>
+              <p>A petroleum engineering study covering fluid distribution in an anticlinal reservoir, porosity and pore structure, effective porosity calculations with uncertainty analysis, and Boyle’s-law helium porosimetry for core plugs.</p>
+              <ul class="project-tags">
+                <li>Reservoir engineering</li>
+                <li>Porosity</li>
+                <li>Fluid distribution</li>
+                <li>Core analysis</li>
+                <li>Helium porosimetry</li>
+                <li>Uncertainty analysis</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn" href="/documents/Excercise%201%20-%20Reservoir%20-2.pdf" target="_blank" rel="noopener noreferrer">View project</a>
+                <a class="text-link dark" href="/documents/Excercise%201%20-%20Reservoir%20-2.pdf" download="Excercise 1 - Reservoir -2.pdf">Download PDF</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
       <div class="project-collection hydrology-collection">
         <div class="collection-header">
           <div class="section-kicker">Collection</div>
@@ -250,6 +287,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 .project-collection{margin-top:24px}
 .hydrology-collection{margin-top:82px}
+.reservoir-collection{margin-top:82px}
+.reservoir-card{background:radial-gradient(circle at 78% 28%,rgba(245,130,32,.9) 0 4px,transparent 5px),linear-gradient(180deg,transparent 0 31%,rgba(15,61,62,.08) 31% 32%,transparent 32% 57%,rgba(15,61,62,.08) 57% 58%,transparent 58%),linear-gradient(165deg,#102f31 0%,#245c59 42%,#d3a76d 43%,#ead8bc 100%);color:#fff;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between}
+.reservoir-card>span{font-size:.55rem;letter-spacing:.14em;font-weight:700}
+.reservoir-card>strong{font-size:.55rem;letter-spacing:.12em;line-height:1.5;max-width:260px;color:rgba(255,255,255,.9)}
+.reservoir-cross-section{position:relative;height:95px;margin:6px 0}
+.reservoir-cross-section::before{content:'';position:absolute;left:3%;right:3%;top:22px;height:52px;border:1px solid rgba(255,255,255,.55);border-radius:50% 50% 42% 58% / 38% 44% 56% 62%;transform:rotate(-3deg)}
+.reservoir-cross-section i{position:absolute;display:block;left:8%;right:8%;height:19px;border-radius:50% 50% 0 0;opacity:.92}
+.reservoir-cross-section .gas{top:28px;background:#ead8bc;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.reservoir-cross-section .oil{top:47px;background:#c9793d;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.reservoir-cross-section .water{top:66px;background:#7ea5a0;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.reservoir-cross-section b{position:absolute;font-size:.48rem;letter-spacing:.12em}
+.reservoir-cross-section b:nth-of-type(1){right:8%;top:28px;color:#fff}
+.reservoir-cross-section b:nth-of-type(2){right:8%;top:48px;color:#fff}
+.reservoir-cross-section b:nth-of-type(3){right:8%;top:68px;color:#fff}
 .collection-header{margin:0 0 26px}
 .collection-header h2{color:var(--green);font:600 clamp(2.1rem,4vw,3.2rem)/1.08 'Playfair Display',serif;margin:10px 0 0}
 
