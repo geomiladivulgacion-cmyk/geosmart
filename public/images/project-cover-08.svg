@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-<defs>
- <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient>
- <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient>
- <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient>
- <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
-</defs>
-<g transform="translate(-600 -800)"><rect width="600" height="400" fill="url(#g2)"/>
- <path d="M0 315 L100 210 L180 275 L275 120 L370 260 L475 175 L600 255 V400H0Z" fill="#264c49"/>
- <g fill="none" stroke="#f6efe7" opacity=".35"><path d="M55 115 Q180 55 305 115 T555 95"/><path d="M40 155 Q175 95 310 155 T570 135"/></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><defs>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient>
+<linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient>
+</defs><rect width="600" height="400" fill="url(#g2)"/><path d="M0 315 L100 210 L180 275 L275 120 L370 260 L475 175 L600 255 V400H0Z" fill="#264c49"/><g fill="none" stroke="#f6efe7" opacity=".35"><path d="M55 115 Q180 55 305 115 T555 95"/><path d="M40 155 Q175 95 310 155 T570 135"/></g><path d="M65 350 Q170 260 275 320 T520 285" fill="none" stroke="#b8ddd2" stroke-width="12"/><text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">08 / NEPAL</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="30">MADI PRECIPITATION</text></svg>
