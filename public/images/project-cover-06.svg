@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient><linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient></defs>400</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+<defs>
+ <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient>
+ <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient>
+ <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+</defs>
+<g transform="translate(-1200 -400)"><rect width="600" height="400" fill="url(#g3)"/>
+ <path d="M0 260 Q100 180 200 250 T390 230 T600 170 V400 H0Z" fill="#173d3e"/>
+ <path d="M40 300 C160 220 170 350 285 255 S440 215 575 115" fill="none" stroke="#b8ddd2" stroke-width="14"/>
+ <path d="M40 330 C150 270 240 335 350 285 S500 250 575 190" fill="none" stroke="#f6efe7" stroke-width="3" opacity=".45"/>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">06 / SAGELVA</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="31">CATCHMENT &amp; FLOW</text></g>
+</svg>
