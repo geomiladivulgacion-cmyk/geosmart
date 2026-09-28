@@ -25,7 +25,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="projects-grid collection-grid">
           <article class="card project-card project-regional">
-            <div class="card-image regional-card cover-sprite cover-01" aria-label="Project cover 1"></div>
+            <div class="card-image regional-card cover-image cover-01" aria-label="Project cover 1"></div>
             <div class="card-body">
               <div class="card-tag">Regional metamorphism · Structural geology</div>
               <h3>Regional Metamorphism of Metapelites</h3>
@@ -47,7 +47,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-contact">
-            <div class="card-image contact-card cover-sprite cover-02" aria-label="Project cover 2"></div>
+            <div class="card-image contact-card cover-image cover-02" aria-label="Project cover 2"></div>
             <div class="card-body">
               <div class="card-tag">Contact metamorphism · Petrography</div>
               <h3>Contact Metamorphism of Metapelites</h3>
@@ -69,7 +69,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-basic">
-            <div class="card-image basic-card cover-sprite cover-03" aria-label="Project cover 3"></div>
+            <div class="card-image basic-card cover-image cover-03" aria-label="Project cover 3"></div>
             <div class="card-body">
               <div class="card-tag">Metabasites · P–T evolution</div>
               <h3>Metabasites: Petrography and P–T Evolution</h3>
@@ -91,7 +91,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-santa-maria">
-            <div class="card-image santa-maria-card cover-sprite cover-04" aria-label="Project cover 4"></div>
+            <div class="card-image santa-maria-card cover-image cover-04" aria-label="Project cover 4"></div>
             <div class="card-body">
               <div class="card-tag">Field geology · Tectonometamorphic evolution</div>
               <h3>Santa María de la Alameda: Geological Mapping and Tectonometamorphic Evolution</h3>
@@ -160,7 +160,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="projects-grid hydrology-grid">
           <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-sprite cover-05" aria-label="Project cover 5"></div>
+            <div class="card-image hydrology-card cover-image cover-05" aria-label="Project cover 5"></div>
             <div class="card-body">
               <div class="card-tag">Hydrology · Basin analysis</div>
               <h3>Hydrological Study of the Peñarroya Reservoir Basin</h3>
@@ -183,7 +183,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-sprite cover-06" aria-label="Project cover 6"></div>
+            <div class="card-image hydrology-card cover-image cover-06" aria-label="Project cover 6"></div>
             <div class="card-body">
               <div class="card-tag">Hydrology · Field analysis</div>
               <h3>Sagelva Catchment and Streamflow Analysis</h3>
@@ -202,7 +202,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-sprite cover-07" aria-label="Project cover 7"></div>
+            <div class="card-image hydrology-card cover-image cover-07" aria-label="Project cover 7"></div>
             <div class="card-body">
               <div class="card-tag">Hydrology · Quantitative analysis</div>
               <h3>Climate and Flood Frequency Analysis at Svarttjønnbekken</h3>
@@ -220,7 +220,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-sprite cover-08" aria-label="Project cover 8"></div>
+            <div class="card-image hydrology-card cover-image cover-08" aria-label="Project cover 8"></div>
             <div class="card-body">
               <div class="card-tag">Hydrology · Data analysis</div>
               <h3>Precipitation Analysis of the Madi Catchment, Nepal</h3>
@@ -238,7 +238,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </article>
 
           <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-sprite cover-09" aria-label="Project cover 9"></div>
+            <div class="card-image hydrology-card cover-image cover-09" aria-label="Project cover 9"></div>
             <div class="card-body">
               <div class="card-tag">Hydrology · Quantitative analysis</div>
               <h3>Long-Term Hydrological and Climate Analysis</h3>
@@ -311,10 +311,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .project-card:nth-child(2){border-top-color:var(--green)}
 .project-card:nth-child(3){border-top-color:#b69b55}
 .project-card .card-image{height:205px;position:relative;overflow:hidden;background:var(--cream)}
-.cover-sprite{background-image:url('/images/project-covers-sprite.svg');background-repeat:no-repeat;background-size:300% 300%;background-color:var(--cream)}
-.cover-01{background-position:0% 0%}.cover-02{background-position:50% 0%}.cover-03{background-position:100% 0%}
-.cover-04{background-position:0% 50%}.cover-05{background-position:50% 50%}.cover-06{background-position:100% 50%}
-.cover-07{background-position:0% 100%}.cover-08{background-position:50% 100%}.cover-09{background-position:100% 100%}
+.cover-image{background-repeat:no-repeat;background-position:center;background-size:cover;background-color:var(--cream)}
+.cover-01{background-image:url('/images/project-cover-01.svg')}.cover-02{background-image:url('/images/project-cover-02.svg')}.cover-03{background-image:url('/images/project-cover-03.svg')}
+.cover-04{background-image:url('/images/project-cover-04.svg')}.cover-05{background-image:url('/images/project-cover-05.svg')}.cover-06{background-image:url('/images/project-cover-06.svg')}
+.cover-07{background-image:url('/images/project-cover-07.svg')}.cover-08{background-image:url('/images/project-cover-08.svg')}.cover-09{background-image:url('/images/project-cover-09.svg')}
 .project-card .card-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.10));pointer-events:none}
 .project-card .card-image span,.project-card .card-image i,.project-card .card-image b{position:relative;z-index:1}
 .project-card .card-image i{font-style:normal;margin:0 8px 0 4px;font-size:1.2rem}
