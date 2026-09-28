@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient><linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient></defs>0</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+<defs>
+ <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient>
+ <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient>
+ <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+</defs>
+<g transform="translate(0 0)"><rect width="600" height="400" fill="url(#g1)"/>
+ <path d="M0 315 Q95 240 180 285 T350 250 T600 275 V400 H0Z" fill="#142f30" opacity=".72"/>
+ <path d="M20 340 Q120 255 220 315 T420 285 T610 300" fill="none" stroke="#f6efe7" stroke-width="3" opacity=".7"/>
+ <g fill="none" stroke="#f6efe7" opacity=".28"><ellipse cx="420" cy="150" rx="145" ry="62"/><ellipse cx="420" cy="150" rx="112" ry="48"/><ellipse cx="420" cy="150" rx="78" ry="34"/></g>
+</svg>
