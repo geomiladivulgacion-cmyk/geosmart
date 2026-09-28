@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<defs>
+ <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3031"/><stop offset=".58" stop-color="#245a58"/><stop offset=".59" stop-color="#d67b32"/><stop offset="1" stop-color="#e7c39d"/></linearGradient>
+ <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#173c3c"/><stop offset=".55" stop-color="#537b70"/><stop offset=".56" stop-color="#e1b06f"/><stop offset="1" stop-color="#f4e8d7"/></linearGradient>
+ <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3638"/><stop offset=".52" stop-color="#315f5b"/><stop offset=".53" stop-color="#9c8463"/><stop offset="1" stop-color="#e9ddc8"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+</defs>
+<!-- 01 Regional metamorphism -->
+<g transform="translate(0 0)"><rect width="600" height="400" fill="url(#g1)"/>
+ <path d="M0 315 Q95 240 180 285 T350 250 T600 275 V400 H0Z" fill="#142f30" opacity=".72"/>
+ <path d="M20 340 Q120 255 220 315 T420 285 T610 300" fill="none" stroke="#f6efe7" stroke-width="3" opacity=".7"/>
+ <g fill="none" stroke="#f6efe7" opacity=".28"><ellipse cx="420" cy="150" rx="145" ry="62"/><ellipse cx="420" cy="150" rx="112" ry="48"/><ellipse cx="420" cy="150" rx="78" ry="34"/></g>
+ <circle cx="90" cy="85" r="34" fill="#f58220"/><text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">01 / REGIONAL</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="31">METAMORPHIC ZONES</text></g>
+<!-- 02 Contact metamorphism -->
+<g transform="translate(600 0)"><rect width="600" height="400" fill="url(#g2)"/>
+ <path d="M80 400 L205 70 L300 400Z" fill="#263f3f" opacity=".85"/><path d="M220 400 L315 70 L470 400Z" fill="#c39b69" opacity=".75"/>
+ <g fill="none" stroke="#fff" opacity=".34"><ellipse cx="315" cy="190" rx="240" ry="145"/><ellipse cx="315" cy="190" rx="190" ry="112"/><ellipse cx="315" cy="190" rx="135" ry="78"/></g>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">02 / CONTACT</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="29">THERMAL AUREOLE</text></g>
+<!-- 03 Metabasites -->
+<g transform="translate(1200 0)"><rect width="600" height="400" fill="url(#g3)"/>
+ <circle cx="420" cy="190" r="125" fill="#183f40" stroke="#e9ddc8" stroke-width="3" opacity=".92"/>
+ <g stroke="#e9ddc8" opacity=".55" fill="none"><path d="M330 145l170 80M355 105l160 125M315 205l190-40M350 265l130-145"/></g>
+ <path d="M65 315 C155 260 210 335 290 285" fill="none" stroke="#f58220" stroke-width="9"/>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">03 / PETROGRAPHY</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="30">P–T EVOLUTION</text></g>
+<!-- 04 Santa Maria -->
+<g transform="translate(0 400)"><rect width="600" height="400" fill="url(#g2)"/>
+ <path d="M0 310 L110 215 L180 270 L285 125 L390 245 L500 165 L600 250 V400H0Z" fill="#284b48" opacity=".9"/>
+ <path d="M0 335 Q130 285 245 320 T600 300" fill="none" stroke="#e9ddc8" stroke-width="4"/>
+ <g stroke="#f58220" stroke-width="3" opacity=".8"><path d="M100 90L205 340"/><path d="M170 75L275 325"/><path d="M240 70L345 320"/></g>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">04 / FIELD STUDY</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="28">SANTA MARÍA DE LA ALAMEDA</text></g>
+<!-- 05 Campo de Montiel -->
+<g transform="translate(600 400)"><rect width="600" height="400" fill="url(#g1)"/>
+ <path d="M0 95 Q150 55 300 105 T600 75" fill="none" stroke="#f6efe7" stroke-width="2" opacity=".45"/>
+ <path d="M0 145 Q150 105 300 155 T600 125" fill="none" stroke="#f6efe7" stroke-width="2" opacity=".35"/>
+ <path d="M0 205 Q160 160 320 215 T600 190" fill="none" stroke="#f6efe7" stroke-width="2" opacity=".3"/>
+ <path d="M60 350 C170 285 220 340 300 300 S430 260 540 315" fill="none" stroke="#9ed1c4" stroke-width="15" opacity=".8"/>
+ <circle cx="470" cy="105" r="45" fill="#f58220" opacity=".9"/>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">05 / HYDROLOGY</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="29">BASIN · WATER BALANCE</text></g>
+<!-- 06 Sagelva -->
+<g transform="translate(1200 400)"><rect width="600" height="400" fill="url(#g3)"/>
+ <path d="M0 260 Q100 180 200 250 T390 230 T600 170 V400 H0Z" fill="#173d3e"/>
+ <path d="M40 300 C160 220 170 350 285 255 S440 215 575 115" fill="none" stroke="#b8ddd2" stroke-width="14"/>
+ <path d="M40 330 C150 270 240 335 350 285 S500 250 575 190" fill="none" stroke="#f6efe7" stroke-width="3" opacity=".45"/>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">06 / SAGELVA</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="31">CATCHMENT &amp; FLOW</text></g>
+<!-- 07 Svarttjønnbekken -->
+<g transform="translate(0 800)"><rect width="600" height="400" fill="url(#g3)"/>
+ <path d="M0 300 C85 210 155 330 235 245 S390 310 480 190 S550 240 600 155" fill="none" stroke="#f58220" stroke-width="5"/>
+ <path d="M0 330 C85 240 155 360 235 275 S390 340 480 220 S550 270 600 185" fill="none" stroke="#f6efe7" stroke-width="2" opacity=".5"/>
+ <g stroke="#b8ddd2" stroke-width="4"><path d="M110 115v55M150 95v75M190 125v45M230 85v85"/></g>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">07 / HYDROLOGY</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="28">CLIMATE · FLOOD FREQUENCY</text></g>
+<!-- 08 Madi -->
+<g transform="translate(600 800)"><rect width="600" height="400" fill="url(#g2)"/>
+ <path d="M0 315 L100 210 L180 275 L275 120 L370 260 L475 175 L600 255 V400H0Z" fill="#264c49"/>
+ <g fill="none" stroke="#f6efe7" opacity=".35"><path d="M55 115 Q180 55 305 115 T555 95"/><path d="M40 155 Q175 95 310 155 T570 135"/></g>
+ <path d="M65 350 Q170 260 275 320 T520 285" fill="none" stroke="#b8ddd2" stroke-width="12"/>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">08 / NEPAL</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="30">MADI PRECIPITATION</text></g>
+<!-- 09 Hydrology -->
+<g transform="translate(1200 800)"><rect width="600" height="400" fill="url(#g1)"/>
+ <path d="M50 325 C150 255 190 350 285 270 S440 320 550 220" fill="none" stroke="#b8ddd2" stroke-width="13"/>
+ <path d="M70 110 L70 290 M120 160 L120 290 M170 125 L170 290 M220 190 L220 290" stroke="#f6efe7" stroke-width="3" opacity=".45"/>
+ <path d="M70 110L120 160L170 125L220 190" fill="none" stroke="#f58220" stroke-width="6"/>
+ <text x="35" y="45" fill="#f6efe7" font-family="Arial" font-size="18" letter-spacing="4">09 / HYDROLOGY</text><text x="35" y="365" fill="#fff" font-family="Georgia" font-size="30">LONG-TERM ANALYSIS</text></g>
+</svg>
