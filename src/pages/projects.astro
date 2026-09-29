@@ -124,12 +124,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="projects-grid reservoir-grid">
           <article class="card project-card project-reservoir">
             <div class="card-image reservoir-card reservoir-document-cover" aria-label="Reservoir engineering project cover">
-              <span>10 / RESERVOIR ENGINEERING</span>
-              <div class="reservoir-cross-section" aria-hidden="true">
-                <i class="gas"></i><i class="oil"></i><i class="water"></i>
-                <b>GAS</b><b>OIL</b><b>WATER</b>
-              </div>
-              <strong>POROSITY · FLUID DISTRIBUTION · POROSIMETRY</strong>
+              <img src="/documents/portada-reservorio.png" alt="Reservoir engineering project cover" loading="lazy" />
             </div>
             <div class="card-body">
               <div class="card-tag">Petroleum engineering · Reservoir characterization</div>
@@ -291,7 +286,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .project-collection{margin-top:24px}
 .hydrology-collection{margin-top:82px}
 .reservoir-collection{margin-top:82px}
-.reservoir-card{background:radial-gradient(circle at 78% 28%,rgba(245,130,32,.9) 0 4px,transparent 5px),linear-gradient(180deg,transparent 0 31%,rgba(15,61,62,.08) 31% 32%,transparent 32% 57%,rgba(15,61,62,.08) 57% 58%,transparent 58%),linear-gradient(165deg,#102f31 0%,#245c59 42%,#d3a76d 43%,#ead8bc 100%);color:#fff;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between}
+.reservoir-card{position:relative;background:var(--cream)}
 .reservoir-document-cover{background-image:linear-gradient(180deg,rgba(15,61,62,.12),rgba(15,61,62,.28)),url('/documents/portada-reservorio.png');background-position:center;background-size:cover;background-repeat:no-repeat}
 .reservoir-card>span{font-size:.55rem;letter-spacing:.14em;font-weight:700}
 .reservoir-card>strong{font-size:.55rem;letter-spacing:.12em;line-height:1.5;max-width:260px;color:rgba(255,255,255,.9)}
