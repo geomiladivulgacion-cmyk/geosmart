@@ -20,6 +20,7 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="eyebrow">GeoSmart · Camila Fernández</div>
+        <div class="hero-role">Geology undergraduate · Subsurface · Scientific communication</div>
         <h1>Reading the Earth<br /><span>from surface to subsurface.</span></h1>
         <p>I’m a geology undergraduate interested in what happens beneath our feet — and in finding better ways to understand, interpret and explain it.</p>
         <div class="hero-actions">
@@ -77,16 +78,15 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
         <a class="text-link dark" href={fieldNotes}>See all notes →</a>
       </div>
       <div class="note-list home-notes">
-        <article class="note"><div class="card-tag">Geophysics</div><h4>Why does seismic interpretation actually matter?</h4><p class="muted">A look at why seismic interpretation is more than reading lines — it is geological reasoning under uncertainty.</p></article>
-        <article class="note"><div class="card-tag">Norway</div><h4>Geology in Trondheim</h4><p class="muted">What starts to change when you look at an everyday Norwegian landscape with a geologist’s eye.</p></article>
-        <article class="note"><div class="card-tag">Learning</div><h4>Things I wish I knew before studying geology</h4><p class="muted">Lessons from learning to read maps, rocks, data and — eventually — my own mistakes.</p></article>
-      </div>
-    </div>
+        <article class="note"><div class="card-tag">Glacial geomorphology</div><h4>Tracing Deglaciation: Zackenberg Valley &amp; Aneto Glacier</h4><p class="muted">Glacial landforms, <sup>10</sup>Be geochronology, remote sensing and glacier retreat across Arctic and alpine environments.</p><a class="text-link dark" href={fieldNotes}>Read Field Note 01 →</a></article>
+        <article class="note"><div class="card-tag">Global tectonics</div><h4>How Plate Tectonics Works: Forces, Rheology &amp; Deformation</h4><p class="muted">A synthesis of plate-driving forces, rheology, subduction geometry and the deformation they produce.</p><a class="text-link dark" href={fieldNotes}>Read Field Note 02 →</a></article>
+        <article class="note"><div class="card-tag">Metamorphic field geology</div><h4>Mapping a Metamorphic Terrane: Prádena &amp; Berzosa</h4><p class="muted">Regional and detailed geological mapping connecting metamorphic zonation, structures and Variscan tectonic evolution.</p><a class="text-link dark" href={fieldNotes}>Read Field Note 03 →</a></article>
+      </div>   </div>
   </section>
 </BaseLayout>
 
 <style>
-.home-projects-grid{grid-template-columns:repeat(3,1fr)}
+.hero-role{margin-top:-6px;margin-bottom:18px;color:rgba(255,255,255,.82);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.home-projects-grid{grid-template-columns:repeat(3,1fr)}
 .home-projects-grid .card{overflow:hidden}
 .home-projects-grid .card-image{aspect-ratio:1.35/1;min-height:170px}
 .home-projects-grid .card h3{font-size:1.2rem}
