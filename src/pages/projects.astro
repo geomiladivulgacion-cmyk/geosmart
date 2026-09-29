@@ -15,12 +15,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <section class="section projects-page">
     <div class="container">
-      <div class="projects-intro"><span class="projects-count">11</span><p>Geology projects · metamorphic petrology, field mapping and hydrology</p></div>
+      <div class="projects-intro"><span class="projects-count">11</span><p>Selected academic work · field mapping, subsurface analysis, petrology &amp; quantitative geoscience</p></div>
+
+      <div class="project-capabilities" aria-label="Core geoscience capabilities">
+        <span>FIELD MAPPING</span><span>STRUCTURAL INTERPRETATION</span><span>PETROGRAPHY</span><span>RESERVOIR CHARACTERIZATION</span><span>QGIS</span><span>QUANTITATIVE ANALYSIS</span>
+      </div>
 
       <div class="project-collection">
         <div class="collection-header">
           <div class="section-kicker">Collection</div>
-          <h2>METAMORPHIC PETROLOGY</h2>
+          <h2>FIELD GEOLOGY &amp; METAMORPHIC PETROLOGY</h2>
         </div>
 
         <div class="projects-grid collection-grid">
@@ -29,7 +33,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="card-body">
               <div class="card-tag">Regional metamorphism · Structural geology</div>
               <h3>Regional Metamorphism of Metapelites</h3>
-              <p>A field, structural and petrographic study of metamorphic rocks across the Somosierra–Hayedo de Montejo–Berzosa area. The report combines geological context, field observations, lithologies and deformation phases with mineralogical analysis in thin section.</p>
+              <p>A field, structural and petrographic study across the Somosierra–Hayedo de Montejo–Berzosa area, combining geological mapping, structural observations and thin-section mineralogical analysis.</p>
               <p>Metamorphic zonation, mineral assemblages and P–T relationships are used to interpret the tectonometamorphic evolution of the area, including the relationship between deformation, progressive metamorphism and later exhumation.</p>
               <ul class="project-tags">
                 <li>Metamorphic petrology</li>
@@ -96,7 +100,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <div class="card-tag">Field geology · Tectonometamorphic evolution</div>
               <h3>Santa María de la Alameda: Geological Mapping and Tectonometamorphic Evolution</h3>
               <p>A geological field study of the southern Robledondo sector of the Santa María de la Alameda gneissic dome, combining detailed mapping, macroscopic petrographic observations and structural measurements.</p>
-              <p>The report characterises orthogneisses, leucogneisses, migmatitic levels and mylonitic bands, using foliations, mineral lineations, folds and ductile shear zones to interpret Variscan regional metamorphism, deformation and tectonic exhumation.</p>
+              <p>The report characterises orthogneisses, leucogneisses, migmatitic levels and mylonitic bands, using foliations, lineations, folds and ductile shear zones to reconstruct Variscan deformation, metamorphism and tectonic exhumation.</p>
               <ul class="project-tags">
                 <li>Metamorphic petrology</li>
                 <li>Field geology</li>
@@ -118,7 +122,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="card-body">
               <div class="card-tag">Field geology · Geological cartography</div>
               <h3>Berzosa Geological Mapping and Cartography</h3>
-              <p>A field-based geological cartography project in the Berzosa area, documenting mapped geological units and their spatial relationships in a technical map and accompanying report.</p>
+              <p>A field-based geological cartography project in the Berzosa area, translating field observations into a detailed geological map and technical report that document units, contacts and structural relationships.</p>
               <ul class="project-tags">
                 <li>Field geology</li>
                 <li>Geological mapping</li>
@@ -207,7 +211,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <li>Field analysis</li>
                 <li>Streamflow</li>
                 <li>Catchment analysis</li>
-                <li>Catchment analysis</li>
                 <li>Runoff</li>
                 <li>Water balance</li>
               </ul>
@@ -223,7 +226,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="card-body">
               <div class="card-tag">Hydrology · Quantitative analysis</div>
               <h3>Climate and Flood Frequency Analysis at Svarttjønnbekken</h3>
-              <p>NTNU hydrology coursework presented as a practical exercise in quantitative analysis of hydrological processes and water resources.</p>
+              <p>NTNU coursework applying quantitative methods to hydrological processes, catchment response and water resources.</p>
               <ul class="project-tags">
                 <li>Hydrology</li>
                 <li>Quantitative analysis</li>
@@ -241,7 +244,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="card-body">
               <div class="card-tag">Hydrology · Data analysis</div>
               <h3>Precipitation Analysis of the Madi Catchment, Nepal</h3>
-              <p>NTNU hydrology coursework focused on hydrological data analysis and interpretation using the Madi dataset.</p>
+              <p>NTNU coursework focused on precipitation data analysis, variability and interpretation for the Madi catchment.</p>
               <ul class="project-tags">
                 <li>Hydrology</li>
                 <li>Data analysis</li>
@@ -259,7 +262,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="card-body">
               <div class="card-tag">Hydrology · Quantitative analysis</div>
               <h3>Long-Term Hydrological and Climate Analysis</h3>
-              <p>NTNU hydrology coursework focused on applied quantitative analysis of hydrological processes and water resources.</p>
+              <p>NTNU coursework applying long-term quantitative analysis to hydrological processes and water resources.</p>
               <ul class="project-tags">
                 <li>Hydrology</li>
                 <li>Quantitative analysis</li>
@@ -319,7 +322,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .reservoir-cross-section b:nth-of-type(1){right:8%;top:28px;color:#fff}
 .reservoir-cross-section b:nth-of-type(2){right:8%;top:48px;color:#fff}
 .reservoir-cross-section b:nth-of-type(3){right:8%;top:68px;color:#fff}
-.collection-header{margin:0 0 26px}
+.collection-header{margin:0 0 26px;padding-top:4px}
 .collection-header h2{color:var(--green);font:600 clamp(2.1rem,4vw,3.2rem)/1.08 'Playfair Display',serif;margin:10px 0 0}
 
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
