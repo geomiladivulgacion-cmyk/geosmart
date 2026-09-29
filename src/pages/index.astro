@@ -44,7 +44,7 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
       </div>
       <div class="projects-grid home-projects-grid">
         <a class="card" href={projects}><div class="card-image home-cover cover-01" aria-label="Regional metamorphism project cover"><img src="/images/portada-metamorfica.png" alt="Regional metamorphism project cover" loading="lazy" /></div><div class="card-body"><div class="card-tag">Regional metamorphism</div><h3>Regional Metamorphism of Metapelites</h3><p>Field, structural and petrographic study of the Somosierra–Hayedo de Montejo–Berzosa area, including metamorphic zonation and P–T evolution.</p></div></a>
-        <a class="card" href={projects}><div class="card-image home-cover cover-reservoir" aria-label="Reservoir engineering project cover"><div class="home-reservoir-cover"><span>10 / RESERVOIR ENGINEERING</span><strong>POROSITY · FLUID DISTRIBUTION · POROSIMETRY</strong></div></div><div class="card-body"><div class="card-tag">Petroleum engineering · Reservoir characterization</div><h3>Reservoir Engineering</h3><p>Study of fluid distribution in an anticlinal reservoir, effective porosity, uncertainty analysis and helium porosimetry.</p></div></a>
+        <a class="card" href={projects}><div class="card-image home-cover cover-reservoir" aria-label="Reservoir engineering project cover"><div class="home-reservoir-cover"><span>10 / RESERVOIR ENGINEERING</span><strong>POROSITY · FLUID DISTRIBUTION · POROSIMETRY</strong></div><img src="/documents/portada-reservorio.png" alt="Reservoir engineering project cover" loading="lazy" /></div><div class="card-body"><div class="card-tag">Petroleum engineering · Reservoir characterization</div><h3>Reservoir Engineering</h3><p>Study of fluid distribution in an anticlinal reservoir, effective porosity, uncertainty analysis and helium porosimetry.</p></div></a>
         <a class="card" href={projects}><div class="card-image home-cover cover-05" aria-label="Campo de Montiel hydrology project cover"><img src="/images/portada-hidrologia.png" alt="Campo de Montiel hydrology project cover" loading="lazy" /></div><div class="card-body"><div class="card-tag">Hydrology · QGIS</div><h3>Hydrological Study of the Peñarroya Reservoir Basin</h3><p>Hydrological analysis of the Campo de Montiel basin combining watershed delineation, water balance, evapotranspiration and runoff methods.</p></div></a>
       </div>
     </div>
@@ -92,10 +92,10 @@ const heroImage = 'https://imaggeo.egu.eu/media/uploads/2013/12/19/1725/1f6b3e1c
 .home-projects-grid .card h3{font-size:1.2rem}
 .home-projects-grid .card p{font-size:.8rem}
 .home-cover{position:relative;background-color:var(--cream);overflow:hidden}
-.home-reservoir-cover{position:absolute;inset:0;padding:20px 22px;background:linear-gradient(165deg,#102f31 0%,#245c59 42%,#d3a76d 43%,#ead8bc 100%);color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.home-reservoir-cover{position:absolute;inset:0;padding:20px 22px;background:linear-gradient(165deg,#102f31 0%,#245c59 42%,#d3a76d 43%,#ead8bc 100%);color:#fff;display:flex;flex-direction:column;justify-content:space-between;z-index:1}
 .home-reservoir-cover span{font-size:.5rem;letter-spacing:.13em;font-weight:700}
 .home-reservoir-cover strong{font-size:.55rem;letter-spacing:.1em;line-height:1.5;max-width:220px;color:rgba(255,255,255,.92)}
-.home-cover img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.home-cover img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center;z-index:0}
 
 @media(max-width:1000px){.home-projects-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.home-projects-grid{grid-template-columns:1fr}.home-projects-grid .card-image{min-height:190px}}
