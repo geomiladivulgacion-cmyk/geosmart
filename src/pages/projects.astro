@@ -15,7 +15,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <section class="section projects-page">
     <div class="container">
-      <div class="projects-intro"><span class="projects-count">12</span><p>Selected academic work · field mapping, subsurface analysis, petrology &amp; quantitative geoscience</p></div>
+      <div class="projects-intro"><span class="projects-count">9</span><p>Selected academic work · field mapping, subsurface analysis, petrology &amp; quantitative geoscience</p></div>
 
       <div class="project-capabilities" aria-label="Core geoscience capabilities">
         <span>FIELD MAPPING</span><span>STRUCTURAL INTERPRETATION</span><span>PETROGRAPHY</span><span>RESERVOIR CHARACTERIZATION</span><span>QGIS</span><span>QUANTITATIVE ANALYSIS</span>
@@ -212,45 +212,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </article>
 
-          <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-image cover-06 hydrology-document-cover" aria-label="Project cover 6"><img src="/images/portada-hidrologia.png" alt="Project cover 6" loading="lazy" /></div>
-            <div class="card-body">
-              <div class="card-tag">Hydrology · Field analysis</div>
-              <h3>Sagelva Catchment and Streamflow Analysis</h3>
-              <p>A hydrology exercise focused on the Sagelva catchment, combining field-based hydrological observations with quantitative analysis of streamflow and basin response.</p>
-              <ul class="project-tags">
-                <li>Hydrology</li>
-                <li>Field analysis</li>
-                <li>Streamflow</li>
-                <li>Catchment analysis</li>
-                <li>Runoff</li>
-                <li>Water balance</li>
-              </ul>
-              <div class="project-actions">
-                <a class="btn" href="/documents/Excercise%201-%20Hydrology%20-%20Sagelva.pdf" target="_blank" rel="noopener noreferrer">View project</a>
-                <a class="text-link dark" href="/documents/Excercise%201-%20Hydrology%20-%20Sagelva.pdf" download="Excercise 1 - Hydrology - Sagelva.pdf">Download PDF</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-image cover-07 hydrology-document-cover" aria-label="Project cover 7"><img src="/images/portada-hidrologia.png" alt="Project cover 7" loading="lazy" /></div>
-            <div class="card-body">
-              <div class="card-tag">Hydrology · Quantitative analysis</div>
-              <h3>Climate and Flood Frequency Analysis at Svarttjønnbekken</h3>
-              <p>NTNU coursework applying quantitative methods to hydrological processes, catchment response and water resources.</p>
-              <ul class="project-tags">
-                <li>Hydrology</li>
-                <li>Quantitative analysis</li>
-                <li>Water resources</li>
-              </ul>
-              <div class="project-actions">
-                <a class="btn" href="/documents/Excercise%202%20-%20Hydrology-4.pdf" target="_blank" rel="noopener noreferrer">View project</a>
-                <a class="text-link dark" href="/documents/Excercise%202%20-%20Hydrology-4.pdf" download="Excercise 2 - Hydrology-4.pdf">Download PDF</a>
-              </div>
-            </div>
-          </article>
-
           <article class="card project-card project-hydrology project-madi">
             <div class="card-image hydrology-card cover-image cover-08 hydrology-document-cover" aria-label="Madi catchment hydrology project cover"><img src="/images/Gemini_Generated_Image_qwok71qwok71qwok.jpg" alt="Madi catchment hydrology project cover" loading="lazy" /></div>
             <div class="card-body">
@@ -269,23 +230,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </article>
 
-          <article class="card project-card project-hydrology">
-            <div class="card-image hydrology-card cover-image cover-09 hydrology-document-cover" aria-label="Project cover 9"><img src="/images/portada-hidrologia.png" alt="Project cover 9" loading="lazy" /></div>
-            <div class="card-body">
-              <div class="card-tag">Hydrology · Quantitative analysis</div>
-              <h3>Long-Term Hydrological and Climate Analysis</h3>
-              <p>NTNU coursework applying long-term quantitative analysis to hydrological processes and water resources.</p>
-              <ul class="project-tags">
-                <li>Hydrology</li>
-                <li>Quantitative analysis</li>
-                <li>Water resources</li>
-              </ul>
-              <div class="project-actions">
-                <a class="btn" href="/documents/Excercise%204%20-%20Hydrology.pdf" target="_blank" rel="noopener noreferrer">View project</a>
-                <a class="text-link dark" href="/documents/Excercise%204%20-%20Hydrology.pdf" download="Excercise 4 - Hydrology.pdf">Download PDF</a>
-              </div>
-            </div>
-          </article>
+          <div class="more-to-come">More to come soon</div>
         </div>
       </div>
 
@@ -346,6 +291,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .project-card .card-image{height:205px;position:relative;overflow:hidden;background:var(--cream)}
 .project-card .card-image img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center;z-index:0}
 .project-berzosa .card-image,.project-reservoir .card-image,.project-santa-maria .card-image,.project-regional .card-image,.project-basic .card-image,.project-contact .card-image,.project-penarroya .card-image,.project-madi .card-image{height:auto;aspect-ratio:1376 / 768}
+.more-to-come{display:grid;place-items:center;min-height:260px;padding:32px;border:1px dashed rgba(15,61,62,.32);border-radius:0 28px 0 28px;background:linear-gradient(135deg,#f6efe7,#e8f0ec);color:var(--green);font:600 1.6rem/1.15 'Playfair Display',serif;text-align:center}
 .cover-image{background-repeat:no-repeat;background-position:center;background-size:cover;background-color:var(--cream)}
 .project-card .card-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.10));pointer-events:none}
 .project-card .card-image span,.project-card .card-image i,.project-card .card-image b{position:relative;z-index:1}
