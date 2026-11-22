@@ -67,6 +67,7 @@ const pageKeywords = 'Camila Fernández, geology, geology student, geoscience, s
         <a class={path === base ? 'active' : ''} href={base}>Home</a>
         <a class={path.startsWith(projects) ? 'active' : ''} href={projects}>Projects</a>
         <a class={path.startsWith(fieldNotes) ? 'active' : ''} href={fieldNotes}>Field Notes</a>
+        <a class={path === `${base}cv/` ? 'active' : ''} href={cv}>CV</a>
         <a class={path.startsWith(about) ? 'active' : ''} href={about}>About</a>
         <a class={path.startsWith(contact) ? 'active' : ''} href={contact}>Contact</a>
       </nav>
@@ -82,6 +83,7 @@ const pageKeywords = 'Camila Fernández, geology, geology student, geoscience, s
       </div>
       <div class="footer-links">
         <a href={projects}>Projects</a>
+        <a href={cv} target="_blank" rel="noopener noreferrer">CV</a>
         <a href={about}>About</a>
         <a href={contact}>Contact</a>
       </div>
